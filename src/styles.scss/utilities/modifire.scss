@@ -1,0 +1,16 @@
+// active classes
+.secondary-items {
+    transform: scale(0.85);
+    position: relative;
+}
+.secondary-items::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 269px;
+    z-index: 1;
+    background-color: black;
+    opacity: .2;
+}

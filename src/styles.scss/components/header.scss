@@ -1,0 +1,111 @@
+.Header {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 61px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    @include xl-d {
+        width: 95%;
+        padding: 20px 0px;
+    }
+}
+
+.logo {
+    @include lg-d {
+        display: flex;
+        order: 2;
+        width: 75px;
+    }
+}
+
+.header-nav {
+    width: 765px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    @include lg-d {
+        display: none;
+    }
+}
+
+.header-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+}
+
+.callback-btn {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 16px;
+    padding: 11px 25px;
+    border-radius: 4.33rem;
+    border: 1px solid #000;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    @include lg-d {
+        display: flex;
+        order: 1;
+        padding: 9px 13px;
+        font-size: 11px;
+    }
+}
+
+.rest-word {
+    @include lg-d {
+        display: none;
+    }
+}
+
+.BurgerNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2D3CE;
+    padding: 99px 40px 51px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: .35s;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.burder-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-item {
+        margin-bottom: 64px;
+    }
+    &-link {
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.burger_disabled {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.burger-trigger {
+    display: none;
+    @include lg-d {
+        display: flex;
+        order: 3;
+    }
+}

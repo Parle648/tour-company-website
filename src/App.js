@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// import Header from "./Components/Header/Header";
+// import Main from "./Pages/Main/Main";
+// import Luxury from "./Pages/LuxuryPackages/LuxuryPackages";
+import MainFirstBlock from './Components/MainFirstBlock/MainFirstBlock.jsx'
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import SearchComponent from './Components/SearchComponent/SearchComponent.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainFirstBlock />
+      {/* <Router>
+        <Header />
+        <Routes>
+            <Route exaxt path="/" Component={Main}></Route>
+            <Route exaxt path="/luxury" Component={Luxury}></Route>
+        </Routes>
+      </Router>
+      <SearchComponent/> */}
     </div>
   );
 }
