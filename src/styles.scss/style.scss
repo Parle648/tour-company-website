@@ -9,7 +9,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #E5E5E5;
+    background-color: #E2D3CE;
 }
 
 @import
@@ -30,7 +30,8 @@ body {
 
 @import 
     'components/header.scss',
-    'components/findBlock.scss';
+    'components/findBlock.scss',
+    'components/slider.scss';
 
 @import 
     'utilities/modifire.scss';

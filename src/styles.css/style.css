@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: #E5E5E5;
+  background-color: #E2D3CE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -799,6 +799,96 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.FetchSlider__ttl {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  width: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.slider-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.TourCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 280px;
+  height: 550px;
+  border-radius: 10px;
+  padding: 0px 36px 30px 34px;
+  background-color: aqua;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#0B2034));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+}
+.TourCart:hover {
+  cursor: pointer;
+}
+
+.TourCart__location {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.location-mark {
+  margin-right: 5px;
+}
+
+.TourCart__ttl {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.TourCart__mincost {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.TourCart__cost {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 .secondary-items {

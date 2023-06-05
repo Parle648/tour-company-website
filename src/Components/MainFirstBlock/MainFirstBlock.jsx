@@ -22,12 +22,12 @@ function MainFirstBlock () {
         <div className="MainFirstBlock" style={backgroundImage}>
             <Router>
                 <Header />
+                <SearchComponent/>
                 <Routes>
-                    <Route exaxt path="/" Component={Main}></Route>
-                    <Route exaxt path="/luxury" Component={Luxury}></Route>
+                    <Route exaxt path="/" Component={Main} className="absolute"></Route>
+                    <Route exaxt path="/luxury" Component={Luxury} className="absolute"></Route>
                 </Routes>
             </Router>
-            <SearchComponent/>
         </div>
     );
 }

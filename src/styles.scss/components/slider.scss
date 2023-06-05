@@ -1,0 +1,68 @@
+.FetchSlider__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    width: 450px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.slider-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.TourCart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 280px;
+    height: 550px;
+    border-radius: 10px;
+    padding: 0px 36px 30px 34px;
+    background-color: aqua;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.TourCart__location {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.location-mark {
+    margin-right: 5px;
+}
+
+.TourCart__ttl {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.TourCart__mincost {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.TourCart__cost {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
