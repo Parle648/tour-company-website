@@ -1,7 +1,9 @@
-const getToursList = new Promise((resolve, reject) => {
-    fetch('https://tour-company-db.onrender.com/Tours')
-    .then(request => request.text())
-    .then(result => resolve(JSON.parse(result)))
-})
+import axious from "axios"
 
-export default getToursList
+export default function getToursList ({setItems}) {
+    axious.get('https://tour-company-db.onrender.com/Tours')
+    .then(res => {
+        setItems(res.data)
+    })
+    .catch(err => console.log(err))
+}

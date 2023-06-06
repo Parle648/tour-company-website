@@ -1,8 +1,15 @@
 import locationSvg from '../../img/locationmark.svg'
+import slidercartphoto from '../../img/slidercartphoto.png'
+import './TourCart.css'
 
 function TourCart ({location, ttl, mincost, rating}) {
+
+    const style = {
+        backgroundImage: "url(/slidercartphoto.png)"
+    }
+
     return (
-        <div className="TourCart">
+        <div className="TourCart style">
             <div className="">
                 <div className="TourCart__ttl-container">
                     <span className="TourCart__location"><img className="location-mark" src={locationSvg} alt="" />{location}</span>

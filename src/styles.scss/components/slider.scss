@@ -1,3 +1,7 @@
+.FetchSlider {
+    position: relative;
+    margin-bottom: 126px;
+}
 .FetchSlider__ttl {
     font-size: 60px;
     font-weight: 400;
@@ -8,27 +12,57 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-bottom: 58px;
+    margin: 15px auto 58px;
+    @include md-d {
+        font-size: 40px;
+        width: 296px;
+    }
+}
+
+.FetchSlider__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 35px;
+    width: 948px;
+    margin: 0 auto 35px;
+    @include md-d {
+        overflow-x: scroll;
+    }
+}
+
+.FetchSlider__link {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #79655E;
 }
 
 .slider-line {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .45s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .TourCart {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 280px;
+    width: 350px;
     height: 550px;
     border-radius: 10px;
     padding: 0px 36px 30px 34px;
-    background-color: aqua;
+    // background-color: aqua;
     color: #fff;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+    background-image: "url(/slidercartphoto.png)";
     &:hover {
         cursor: pointer;
+    }
+    @include sm-d {
+        width: 285px;
     }
 }
 
@@ -65,4 +99,45 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
+}
+
+.SliderBtn {
+    width: 75px;
+    height: 75px;
+    background: #79655E;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 242px;
+    &:hover{
+        cursor: pointer;
+        background-color: #6b5d57;
+    }
+}
+
+.SliderBtn__arrow {
+    transform: rotate(45deg);
+}
+
+.SliderBar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px;
+    display: none;
+    @include sm-d {
+        display: flex;
+    }
+}
+
+.SliderBar__item {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.SliderBar__item_active {
+    background-color: #79655E;
 }
