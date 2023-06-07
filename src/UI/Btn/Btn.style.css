@@ -10,6 +10,7 @@
     border-radius: 3.8em;
     background-color: transparent;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .Btn:hover {
     cursor: pointer;

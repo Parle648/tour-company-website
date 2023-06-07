@@ -1,6 +1,9 @@
 .FetchSlider {
     position: relative;
     margin-bottom: 126px;
+    @include md-d {
+        margin-bottom: 86px;
+    }
 }
 .FetchSlider__ttl {
     font-size: 60px;

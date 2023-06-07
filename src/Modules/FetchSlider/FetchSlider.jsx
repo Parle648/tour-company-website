@@ -1,5 +1,5 @@
 import SliderNavigation from "./components/SliderNavigation/SliderNavigation";
-import SliderBtn from "./components/SliderBtn/SliderBtn";
+import SliderBtn from "../../UI/SliderBtn/SliderBtn";
 import SliderItemList from "./components/SliderItemList/SliderItemList";
 import SliderBar from "./components/SliderBar/SliderBar";
 import axious from 'axios'
