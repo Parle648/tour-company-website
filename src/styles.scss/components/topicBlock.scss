@@ -48,3 +48,13 @@
         display: flex;
     }
 }
+
+//@at-root
+
+.BookListArticle__grid {
+    @include lg-m-d {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

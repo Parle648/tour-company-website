@@ -4,6 +4,7 @@ import SliderBtn from '../../../UI/SliderBtn/SliderBtn';
 import SliderBar from '../../../Modules/FetchSlider/components/SliderBar/SliderBar';
 import './TourSliderArticle.style.css'
 import Btn from '../../../UI/Btn/Btn';
+// import background from '../../../img/bookbackground.png'
 import { useState, useRef } from 'react';
 
 const TourSliderArticle = props => {
@@ -30,17 +31,20 @@ const TourSliderArticle = props => {
 
     return (
         <div className='TourSliderArticle'>
-            {WindowWidth < 880 && topicTextContainer }
-            <div className='topic-slider-line' style={{ marginLeft: `${margin}px` }}>
-                {WindowWidth > 880 && topicTextContainer}
-                <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '135'} />
-                <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-244'} />
-                <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-140'} />
+            <div className="wrapper">
+                {WindowWidth < 880 && topicTextContainer }
+                <div className='topic-slider-line' style={{ marginLeft: `${margin}px` }}>
+                    {WindowWidth > 880 && topicTextContainer}
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '135'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-244'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-140'} />
+                </div>
+                {WindowWidth < 880 && <SliderBtn handleClick={moveSlider} />}
+                <SliderBar items={[1, 2, 3, 4, 5]} indexSliderBarRef={indexSliderBarRef} />
+                {/* <img className='background-img' src={background} alt="" /> */}
             </div>
-            {WindowWidth < 880 && <SliderBtn handleClick={moveSlider} />}
-            <SliderBar items={[1, 2, 3, 4, 5]} indexSliderBarRef={indexSliderBarRef} />
         </div>
     );
 };
