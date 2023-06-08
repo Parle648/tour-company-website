@@ -1,0 +1,89 @@
+.SearchComponent {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 22px 26px 22px 31px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include lg-d {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+.Search__ttl-block {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    @include md-d {
+        width: 310px;
+    }
+}
+.SearchLabel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Search__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    @include md-d {
+        margin-bottom: 32px;
+    }
+}
+
+.Search__text-block {
+    margin-left: 8px;
+}
+.Search__inner-ttl {
+    width: 95px;
+    height: 24px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #79655E;
+}
+
+.Search__inner-subttl {
+    width: 183px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0C0B10;
+}
+
+.SearchBtn {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-radius: 4.5em;
+    padding: 23px 24px;
+}
+
+.MainFirstBlock {
+    background-image: "url(./../../img/bgtop.png)";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1041px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.absolute {
+    position: absolute;
+}

@@ -1,0 +1,21 @@
+// fonts
+@mixin basicFont {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+}
+@mixin sliderCartFont {
+    font-family: 'Inter';
+    font-weight: 700;
+}
+@mixin titleFont {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.orange {
+    color: $orange;
+}
+.white {
+    color: #fff;
+    font-weight: 600;
+}

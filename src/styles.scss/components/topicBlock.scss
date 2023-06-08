@@ -1,0 +1,60 @@
+.topic-slider-line {
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-gap: 24px 30px;
+    justify-content: center;
+    position: relative;
+    transition: .35s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    @include xl-d {
+        grid-template-columns: repeat(2,350px);
+    }
+    @include md-d {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 1540px;
+    }
+}
+
+.topic-slider-text-container {
+    @include md-d {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 106%;
+    }
+}
+
+.topic-slider__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000;
+    margin-bottom: 30px;
+    @include md-d {
+        line-height: 30px;
+        font-size: 28px;
+    }
+}
+
+.topic-slider-wrapper {
+    position: relative;
+}
+
+.topic-slider-btn {
+    display: none;
+    @include md-d {
+        display: flex;
+    }
+}
+
+//@at-root
+
+.BookListArticle__grid {
+    @include lg-m-d {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

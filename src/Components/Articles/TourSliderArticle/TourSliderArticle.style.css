@@ -1,0 +1,12 @@
+.TourSliderArticle {
+    margin-bottom: 110px;
+    background: linear-gradient(180deg, #E2D3CE 0%, #C9C8D8 30.73%, #D4D8C6 59.37%, #E2D3CE 100%);
+    position: relative;
+}
+
+.background-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 979px;
+}
