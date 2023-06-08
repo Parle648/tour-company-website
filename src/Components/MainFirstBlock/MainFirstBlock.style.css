@@ -1,8 +1,5 @@
 .MainFirstBlock {
     background: url('../../img/bgtop.png');
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     height: 1041px;
     display: flex;
     flex-direction: column;

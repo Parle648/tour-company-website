@@ -1,0 +1,52 @@
+.BlackBtn {
+    background-color: black;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 3em;
+    position: relative;
+    margin: 0 auto;
+    padding: .5em 6.2em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: .35s;
+}
+
+.BlackBtn:hover {
+    cursor: pointer;
+    background-color: rgb(29, 26, 26);
+}
+
+.BlackBtn::before {
+    content: '';
+    width: 90%;
+    height: 61px;
+    border: 1px solid #000;
+    border-radius: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.crownTop  {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background: #e1d0c1;
+    padding: 0px 10px;
+    border-radius: 42px;
+}
+
+.crownBottom {
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background: transparent;
+    padding: 0px 10px;
+    border-radius: 42px;
+}
