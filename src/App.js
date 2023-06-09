@@ -9,6 +9,9 @@ import BlackBtn from './UI/BlackBtn/BlackBtn.jsx';
 import SubscribeModule from './Modules/SubscribeModule/SubscribeModule.jsx';
 import './styles.css/style.css'
 
+import RewiewModule from
+'./Modules/RewiewsModule/RewiewModule.jsx'
+
 function App() {
   return (
     <div className="App">
@@ -20,8 +23,9 @@ function App() {
       <BookListArticle />
       <WhyWeArticle />
       <CustomizeTripArticle />
-
       <SubscribeModule />
+
+      <RewiewModule/>
     </div>
   );
 }

@@ -1,0 +1,50 @@
+.RewiewCart {
+    position: relative;
+    width: 636px;
+    margin-right: 94px;
+}
+
+.RewiewCart__backgroundSide,
+.RewiewCart__backgroundTopSide {
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    transform: translate(-50%, 0);
+}
+
+.RewiewCart__backgroundTopSide { 
+    background-color:#E2D3CE;
+    padding: 4px 47px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.RewiewCart__inner-block{
+    padding: 61px 66px 72px 89px;
+    background: rgba(226, 211, 206, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 636px;
+}
+
+.RewiewCart__rewiew {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 37px;
+    width: 481px;
+    margin-bottom: 88px;
+}
+
+.RewiewCart__username {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.RewiewCart__trip {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 16px;
+}
