@@ -12,6 +12,8 @@
     text-transform: uppercase;
     white-space: nowrap;
     transition: .35s;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 .BlackBtn:hover {
