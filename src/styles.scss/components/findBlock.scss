@@ -1,7 +1,7 @@
 .SearchComponent {
     width: 1110px;
     margin: 0 auto;
-    padding: 22px 26px 22px 31px;
+    padding: 22px 26px 14px 31px;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
@@ -27,7 +27,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -56%);
 }
 .Search__block {
     display: flex;

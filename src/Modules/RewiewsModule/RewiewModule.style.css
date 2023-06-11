@@ -74,4 +74,7 @@
     .RewiewModule__slider__background {
         bottom: 0;
     }
+    .RewiewModule__ttl {
+        margin: 0 auto -45px;
+    }
 }

@@ -1,6 +1,7 @@
 import destination from '../../img/icondestination.svg'
 import searchIcon from '../../img/searchicon.svg'
 import label from '../../img/searchlabel.svg'
+import './SearchCpmponent.css'
 
 function SearchComponent () {
     return (
@@ -27,7 +28,7 @@ function SearchComponent () {
                     <h2 className="Search__inner-subttl">14 Dec 2022</h2>
                 </div>
             </div>
-            <div className="Search__block">
+            <div className="Search__block last-item">
                 <img src={destination} alt="" />
                 <div className="Search__text-block">
                     <h2 className="Search__inner-ttl">Travellers</h2>

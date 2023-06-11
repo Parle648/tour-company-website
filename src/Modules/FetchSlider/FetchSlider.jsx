@@ -27,7 +27,7 @@ function FetchSlider () {
     function handleClick() {
         if (margin >= -1740 && document.body.clientWidth > 650) {
             indexSliderBarRef.current +=1
-            setMargin(margin - 361)
+            setMargin(margin - 380)
         }
         else if (margin >= -2570 && document.body.clientWidth < 650) {
             indexSliderBarRef.current +=1

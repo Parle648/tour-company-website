@@ -69,8 +69,11 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .SubscribeModule__input {
         width: 95%;
+    }
+    .SubscribeModule__subttl {
+        width: auto;
     }
 }

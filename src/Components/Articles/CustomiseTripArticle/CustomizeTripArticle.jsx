@@ -2,10 +2,12 @@ import React from 'react';
 import './CustomizeTripArticle.style.css'
 import background from '../../../img/customizebackground.png'
 import BlackBtn from '../../../UI/BlackBtn/BlackBtn';
+import clouds from '../../../img/clouds.png'
 
 const CustomizeTripArticle = props => {
     return (
         <div className='CustomizeTripArticle'>
+            <img className='CustomizeTripArticle__clouds' src={clouds} alt="clouds" />
             <h2 className='CustomizeTripArticle__ttl'>Customise <br/> your trip with us</h2>
             <div className="wrapper">
                 <div className="CustomizeTripArticle__block">
@@ -31,7 +33,7 @@ const CustomizeTripArticle = props => {
                 </div>
             </div>
             <br/>
-            <BlackBtn innerText={'Start a trip request'} width='540'/>
+            <BlackBtn innerText={'Start a trip request'} width={document.body.clientWidth > 600 ? '540' : '302'}/>
             <img className='customizeImg' src={background} alt="" />
         </div>
     );

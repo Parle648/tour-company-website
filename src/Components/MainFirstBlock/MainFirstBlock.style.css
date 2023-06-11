@@ -1,11 +1,6 @@
 .MainFirstBlock {
-    background: url('../../img/bgtop.png');
-    height: 1041px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+    background: url('../../img/bgtop.jpg');
+    height: 850px;
 
     background-repeat: round;
     background-size: cover;
@@ -17,5 +12,14 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .MainFirstBlock {
+        background: url('../../img/firstblockbackgroundmobile.png');
+        background-repeat: round;
+        background-size: cover;
+        background-position: inherit;
     }
 }

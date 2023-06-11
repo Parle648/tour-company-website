@@ -8,9 +8,12 @@ import background6 from '../../../img/jets.png'
 import BookCart from '../../BookCart/BookCart';
 import './BookArticleList.style.css'
 
+// import bookBackground from '../../../img/bookbackground.png'
+
 const BookListArticle = props => {
     return (
         <div className='BookListArticle'>
+            <div className='BookCart__background'></div>
             <h2 className='BookListArticle__ttl'>Book With Us</h2>
             <div className='BookListArticle__grid'>
                 <BookCart background={background1} ttl='Supercars'/>

@@ -10,7 +10,7 @@ function TourCart ({location, ttl, mincost, rating}) {
 
     return (
         <div className="TourCart style">
-            <div className="">
+            <div className="TourCart-description">
                 <div className="TourCart__ttl-container">
                     <span className="TourCart__location"><img className="location-mark" src={locationSvg} alt="" />{location}</span>
                     <h2 className="TourCart__ttl">{ttl}</h2>

@@ -1,7 +1,7 @@
 .Header {
-    width: 1300px;
-    margin: 0 auto;
-    padding: 61px 0px;
+    width: 1351px;
+    margin: 0px auto 654px;
+    padding: 24px 0px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +11,9 @@
     @include xl-d {
         width: 95%;
         padding: 20px 0px;
+    }
+    @include sm-d {
+        margin: 0px auto 500px;
     }
 }
 
@@ -38,13 +41,17 @@
     text-transform: uppercase;
     color: #000;
     font-size: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.04em;
 }
 
 .callback-btn {
     text-transform: uppercase;
     color: #000;
     font-size: 16px;
-    padding: 11px 25px;
+    padding: 11px 20px;
     border-radius: 4.33rem;
     border: 1px solid #000;
     background-color: transparent;

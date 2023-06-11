@@ -5,7 +5,6 @@ const SliderItemList = ({width, margin, items}) => {
     return (
         <div className="slider-line" 
         style={{
-            width: `${width}`,
             marginLeft: `${margin}px`
         }}>
             {items.map(item => {

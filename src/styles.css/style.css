@@ -325,7 +325,7 @@ template {
 }
 
 .wrapper {
-  width: 1250px;
+  width: 1351px;
   margin: 0 auto;
   overflow-x: hidden;
   padding-right: 17px;
@@ -526,9 +526,9 @@ template {
 }
 
 .Header {
-  width: 1300px;
-  margin: 0 auto;
-  padding: 61px 0px;
+  width: 1351px;
+  margin: 0px auto 654px;
+  padding: 24px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,6 +546,11 @@ template {
   .Header {
     width: 95%;
     padding: 20px 0px;
+  }
+}
+@media (max-width: 634.8px) {
+  .Header {
+    margin: 0px auto 500px;
   }
 }
 
@@ -585,13 +590,17 @@ template {
   text-transform: uppercase;
   color: #000;
   font-size: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
 }
 
 .callback-btn {
   text-transform: uppercase;
   color: #000;
   font-size: 16px;
-  padding: 11px 25px;
+  padding: 11px 20px;
   border-radius: 4.33rem;
   border: 1px solid #000;
   background-color: transparent;
@@ -692,7 +701,7 @@ template {
 .SearchComponent {
   width: 1110px;
   margin: 0 auto;
-  padding: 22px 26px 22px 31px;
+  padding: 22px 26px 14px 31px;
   border-radius: 10px;
   background-color: #fff;
   position: relative;
@@ -734,8 +743,8 @@ template {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -56%);
+          transform: translate(-50%, -56%);
 }
 
 .Search__block {
@@ -813,7 +822,7 @@ template {
 
 .FetchSlider {
   position: relative;
-  margin-bottom: 126px;
+  margin-bottom: 128px;
 }
 @media (max-width: 879.8px) {
   .FetchSlider {
@@ -900,9 +909,10 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 350px;
-  height: 550px;
+  height: 572px;
   border-radius: 10px;
-  padding: 0px 36px 30px 34px;
+  padding: 0px 191px 30px 34px;
+  margin-right: 30px;
   color: #fff;
   background-image: "url(/slidercartphoto.png)";
 }

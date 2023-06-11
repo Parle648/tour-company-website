@@ -7,6 +7,7 @@
     background-size: cover;
     background-position: inherit;
     margin-bottom: 15px;
+    margin-bottom: 616px;
 }
 
 .WhyWeArticle__description {
@@ -20,8 +21,7 @@
     font-weight: 400;
     line-height: 58px;
     width: 310px;
-    text-transform: uppercase;
-    margin-right: 56px;
+    margin-right: -11px;
     overflow: hidden;
 }
 
@@ -34,11 +34,14 @@
 }
 
 .WhyWeArticle__pins {
-    margin: 0 auto;
-    width: 900px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    margin: -37px 0px 0px 114px;
+    width: 88%;
+}
+
+.description-second {
+    margin-top: -177px;
 }
 
 .secon__ttl {
@@ -47,16 +50,22 @@
     font-weight: 400;
     line-height: 40px;
     text-transform: none;
+    margin-right: 47px;
 }
 
 .WhyWeArticle__plan-trip {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    margin: -729px auto 0px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 565px;
 }
 
 .WhyWeArticle__img {
-    margin-right: 90px;
+    margin-top: -82px;
 }
 
 .WhyWeArticle__plan-container {
@@ -99,9 +108,9 @@
     /* .second-subttl {
         display: none;
     } */
-    .WhyWeArticle__plan-container {
+    /* .WhyWeArticle__plan-container {
         margin-left: -120px;
-    }
+    } */
     .third__ttl {
         width: 100%;
         margin: 0px 0px 16px ;
@@ -109,6 +118,12 @@
     }
 }
 @media (max-width: 900px) {
+    .WhyWeArticle__pins {
+        margin: 0;
+    }
+    .description-second {
+        margin-top: 60px;
+    } 
     .secon__ttl {
         width: 100%;
         text-align: left;
@@ -119,23 +134,31 @@
         line-height: 26px;
         /**/
         width: 88%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 40px;
-    margin-bottom: 16px;
-    font-weight: 400;
-    line-height: 39px;
+        line-height: 40px;
+        font-size: 40px;
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 39px;
+        text-align: start;
+        margin-left: 88px;
     }
     .third__ttl {
         width: 97%;
         margin-bottom: 16px;
         text-align: start;
-        width: 100%;
         font-size: 26px;
         text-align: start;
         margin-top: 30px;
+        width: 89%;
+    }
+    .WhyWeArticle__img {
+        margin-right: -34px;
+        margin-right: -126px;
     }
     .WhyWeArticle__plan-trip {
         margin-left: -161px;
+    }
+    .WhyWeArticle__plan-container {
+        align-items: baseline;
     }
 }

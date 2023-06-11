@@ -9,10 +9,10 @@ import { useState, useRef } from 'react';
 
 const TourSliderArticle = props => {
     const WindowWidth = document.body.clientWidth
-    const topicTextContainer = (
+    const topicTextContainer = ( 
         <div className='topic-slider-text-container'>
             <h2 className='topic-slider__ttl'>Luxury Packages</h2>
-            <Btn innertext='view all' />
+            <Btn innertext='view all' className='tourSlider__btn'/>
         </div>
     )
     
@@ -35,15 +35,14 @@ const TourSliderArticle = props => {
                 {WindowWidth < 880 && topicTextContainer }
                 <div className='topic-slider-line' style={{ marginLeft: `${margin}px` }}>
                     {WindowWidth > 880 && topicTextContainer}
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '135'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '122'} />
                     <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-244'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-149'} />
                     <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-140'} />
+                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-126'} />
                 </div>
                 {WindowWidth < 880 && <SliderBtn handleClick={moveSlider} />}
                 <SliderBar items={[1, 2, 3, 4, 5]} indexSliderBarRef={indexSliderBarRef} />
-                {/* <img className='background-img' src={background} alt="" /> */}
             </div>
         </div>
     );
