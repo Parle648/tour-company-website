@@ -9,8 +9,8 @@ import BlackBtn from './UI/BlackBtn/BlackBtn.jsx';
 import SubscribeModule from './Modules/SubscribeModule/SubscribeModule.jsx';
 import './styles.css/style.css'
 
-import RewiewModule from
-'./Modules/RewiewsModule/RewiewModule.jsx'
+import RewiewModule from './Modules/RewiewsModule/RewiewModule.jsx'
+import ContactForm from './Modules/ContactForm/ContactForm.jsx';
 
 function App() {
   return (
@@ -26,6 +26,8 @@ function App() {
       <SubscribeModule />
 
       <RewiewModule/>
+
+      <ContactForm/>
     </div>
   );
 }

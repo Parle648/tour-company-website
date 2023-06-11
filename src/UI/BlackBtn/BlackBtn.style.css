@@ -7,7 +7,7 @@
     border-radius: 3em;
     position: relative;
     margin: 0 auto;
-    padding: .5em 6.2em;
+    padding: .5em 3.2em;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -51,4 +51,11 @@
     background: transparent;
     padding: 0px 10px;
     border-radius: 42px;
+}
+
+@media (max-width: 600px) {
+    .BlackBtn {
+        padding: 0.5em 1.2em;
+        width: 261px;
+    }
 }

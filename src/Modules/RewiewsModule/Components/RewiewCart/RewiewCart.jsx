@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './RewiewCart.style.css'
 
 import photo from '../../../../img/useronerewiew.png';
 import side from '../../../../img/rewiwewsubtract.png'
 import topSide from '../../../../img/rewiewtopside.png'
 
-const RewiewCart = ({ userphoto }) => {
+const RewiewCart = memo(({ userphoto }) => {
+    console.log('rendering')
     return (
         <div className='RewiewCart'>
         <img className='RewiewCart__backgroundSide' src={side} alt="RewiewCart__backgroundSide" />
@@ -20,6 +21,6 @@ const RewiewCart = ({ userphoto }) => {
         </div>
         </div>
     );
-};
+})
 
 export default RewiewCart;

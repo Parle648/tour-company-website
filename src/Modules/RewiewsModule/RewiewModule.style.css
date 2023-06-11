@@ -1,6 +1,11 @@
 .RewiewModule {
+    position: relative;
+}
+
+.RewiewModule__inner-container {
     width: 1330px;
     margin: 0 auto;
+    position: relative;
 }
 
 .RewiewModule__ttl {
@@ -19,10 +24,11 @@
 
 .RewiewModule__slider {
     width: 1330px;
-    height: 700px;
+    height: 774px;
     display: flex;
     align-items: center;
     overflow: hidden;
+    position: relative;
 }
 
 .RewiewModule__slider-line {
@@ -30,17 +36,42 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    transition: 2.5s;
 }
 
 .rewiew-slider-btn {
-    left: 42%;
     z-index: 1;
+    right: 0;
 }
 
 .RewiewModule__slider-linear {
-    background: linear-gradient(90deg, rgba(226, 211, 206, 0) 0%, #E2D3CE 99.99%);
     width: 393px;
     height: 693px;
     position: absolute;
     left: 940px;
+    bottom: 61px;
+}
+
+.RewiewModule__slider__background {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -570px;
+    z-index: -1;
+}
+
+@media (max-width: 1300px) {
+    .RewiewModule__slider,
+    .RewiewModule__inner-container {
+        width: 97%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .RewiewModule__slider__background {
+        bottom: 0;
+    }
 }
