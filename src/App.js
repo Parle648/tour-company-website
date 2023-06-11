@@ -11,6 +11,7 @@ import './styles.css/style.css'
 
 import RewiewModule from './Modules/RewiewsModule/RewiewModule.jsx'
 import ContactForm from './Modules/ContactForm/ContactForm.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
       <RewiewModule/>
 
       <ContactForm/>
+
+      <Footer />
     </div>
   );
 }

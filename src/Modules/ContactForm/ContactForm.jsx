@@ -3,6 +3,9 @@ import './ContactForm.css'
 import BlackBtn from '../../UI/BlackBtn/BlackBtn'
 
 const ContactForm = props => {
+
+    const viewWidth = document.body.clientWidth
+
     return (
         <form type='submit' className='ContactForm'>
             <h2 className='ContactForm__ttl'>Contact</h2>
@@ -16,7 +19,7 @@ const ContactForm = props => {
                 type="text" name='ContactForm-phone' 
                 placeholder='Phone'/>
                 
-            <BlackBtn innerText={'Call me back'} width='350'/>
+            <BlackBtn innerText={'Call me back'} width={viewWidth > 400 ? '350' : '261'}/>
         </form>
     );
 };

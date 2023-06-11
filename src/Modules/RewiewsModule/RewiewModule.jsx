@@ -41,7 +41,6 @@ const RewiewModule = memo((props) => {
                     <SliderBtn style='rewiew-slider-btn' handleClick={(viewWidth > 700) ? sliderMove : sliderMoveResponcive} />
                 </div>
             </div>
-            <div className="RewiewModule__slider-linear"></div>
             <img className='RewiewModule__slider__background' src={
                 background
             } alt="" />
