@@ -1,51 +1,43 @@
-import React, { memo } from 'react';
+import React from 'react';
 import './RewiewModule.style.css'
 import RewiewCart from './Components/RewiewCart/RewiewCart';
 import SliderBtn from '../../UI/SliderBtn/SliderBtn';
-import { useState } from 'react';
 import background from '../../img/rewiewbackground.png'
 
-const RewiewModule = memo((props) => {
+const RewiewModule = (props) => {
+    const [marginLeft, setMarginLeft] = React.useState(0)
+    const viewWidth = React.useRef(document.body.clientWidth)
 
-    const [marginLeft, setMarginLeft] = useState(0)
-
-    const viewWidth = document.body.clientWidth
-
+    let MarginLeftRef = React.useRef(0)
+    
     const sliderMove = () => {
-        if (marginLeft > -1800) {
-            setMarginLeft(marginLeft - 730)
+        if (viewWidth.current > 700 && MarginLeftRef.current > -1800) {
+            setMarginLeft(MarginLeftRef.current -= 730)
+        } 
+        else if (viewWidth.current < 700 && MarginLeftRef.current > -1100) {
+            setMarginLeft(MarginLeftRef.current -= 380)
         } else {
-            setMarginLeft(0)
+            setMarginLeft(MarginLeftRef.current = 0)
         }
     }
 
-    const sliderMoveResponcive = () => {
-        if (marginLeft > -1100) {
-            setMarginLeft(marginLeft - 380)
-        } else {
-            setMarginLeft(0)
-        }
-    }
-
-    return (
+    return ( 
         <div className='RewiewModule'>
             <div className="RewiewModule__inner-container">
                 <h2 className='RewiewModule__ttl'>Customers reviews</h2>
                 <div className="RewiewModule__slider">
-                    <div className="RewiewModule__slider-line" style={{ margin: `0px 0px 0px ${marginLeft === 0 ? 20 : marginLeft}px` }}>
+                    <div className="RewiewModule__slider-line" style={{ margin: `0px 0px 0px ${MarginLeftRef.current}px` }}>
                         <RewiewCart />
                         <RewiewCart />
                         <RewiewCart />
                         <RewiewCart />
                     </div>
-                    <SliderBtn style='rewiew-slider-btn' handleClick={(viewWidth > 700) ? sliderMove : sliderMoveResponcive} />
+                    <SliderBtn style='rewiew-slider-btn' handleClick={sliderMove} />
                 </div>
             </div>
-            <img className='RewiewModule__slider__background' src={
-                background
-            } alt="" />
+            <img className='RewiewModule__slider__background' src={background} alt="RewiewModule__slider__background" />
         </div>
     );
-});
+}
 
 export default RewiewModule;

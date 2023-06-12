@@ -9,7 +9,7 @@ function Header () {
     const [visible, setVisible] = useState(false)
 
     function setDisabled () {
-        setVisible(!visible)
+        setVisible(!visible);
     }
 
     return (

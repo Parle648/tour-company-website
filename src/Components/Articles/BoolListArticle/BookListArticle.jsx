@@ -1,14 +1,14 @@
 import React from 'react';
-import background1 from '../../../img/lamborguni.png'
-import background2 from '../../../img/hotels.png'
-import background3 from '../../../img/villas.png'
-import background4 from '../../../img/yachts.png'
-import background5 from '../../../img/helicopters.png'
-import background6 from '../../../img/jets.png'
+import background1 from '../../../img/lamborguni.webp'
+import background2 from '../../../img/hotels.webp'
+import background3 from '../../../img/villas_1.webp'
+import background4 from '../../../img/yachts_1.webp'
+import background5 from '../../../img/helicopters.webp'
+import background6 from '../../../img/jets.webp'
 import BookCart from '../../BookCart/BookCart';
 import './BookArticleList.style.css'
 
-// import bookBackground from '../../../img/bookbackground.png'
+// import bookBackground from '../../../img/bookbackground.webp'
 
 const BookListArticle = props => {
     return (

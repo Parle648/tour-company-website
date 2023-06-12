@@ -9,7 +9,9 @@ const WhyWeArticle = props => {
 
     const windowWidth = document.body.clientWidth
     let pinsSrc = (windowWidth < 914 ? pinsMob : pins)
-
+    const Subttl = (
+        <p className='WhyWeArticle__subttl second-subttl'>Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </p>
+    )
     return (
         <>
             <div className='WhyWeArticle'>
@@ -21,9 +23,7 @@ const WhyWeArticle = props => {
                     <img className='WhyWeArticle__pins' src={pinsSrc} alt="pins" />
                     <div className="WhyWeArticle__description description-second">
                         <h2 className='WhyWeArticle__ttl secon__ttl'>Exclusive knowledge to provide the best of the best to clients</h2>
-                        {document.body.clientWidth > 880 &&
-                            <p className='WhyWeArticle__subttl second-subttl'>Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </p>
-                        }
+                        {document.body.clientWidth > 880 && Subttl }
                     </div>
                 </div>
             </div>
@@ -31,9 +31,7 @@ const WhyWeArticle = props => {
                 <div className="WhyWeArticle__plan-trip">
                     <img className='WhyWeArticle__img' src={planImg} alt="WhyWeArticle__img" />
                     <div className="WhyWeArticle__plan-container">
-                        {document.body.clientWidth < 880 &&
-                            <p className='WhyWeArticle__subttl second-subttl'>Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning. </p>
-                        }
+                        {document.body.clientWidth < 880 && Subttl }
                         <h2 className='WhyWeArticle__ttl secon__ttl third__ttl'>We craft and plan unique itineraries tailored to customers’ interests and with strong attention to detail.</h2>
                         <Btn innertext={'help me plan a trip'}/>
                     </div>

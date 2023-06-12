@@ -1,12 +1,11 @@
 import React, { memo } from 'react';
 import './RewiewCart.style.css'
 
-import photo from '../../../../img/useronerewiew.png';
+import photo from '../../../../img/useronerewiew_1.webp';
 import side from '../../../../img/rewiwewsubtract.png'
 import topSide from '../../../../img/rewiewtopside.png'
 
 const RewiewCart = memo(({ userphoto }) => {
-    console.log('rendering')
     return (
         <div className='RewiewCart'>
         <img className='RewiewCart__backgroundSide' src={side} alt="RewiewCart__backgroundSide" />

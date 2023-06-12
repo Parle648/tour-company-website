@@ -47,8 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: .45s;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: .35s;
 }
 .TourCart {
     display: flex;
@@ -59,7 +58,6 @@
     border-radius: 10px;
     padding: 0px 191px 30px 34px;
     margin-right: 30px;
-    // background-color: aqua;
     color: #fff;
     background-image: "url(/slidercartphoto.png)";
     &:hover {
@@ -144,4 +142,9 @@
 
 .SliderBar__item_active {
     background-color: #79655E;
+}
+.TourCart-description {
+    @include sm-d {
+        margin-right: 99px;
+    }
 }

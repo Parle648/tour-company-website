@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SliderBar = ({items, indexSliderBarRef}) => {
+    console.log("render sidebar ")
     return (
         <div className="SliderBar">
             {items.map(item => {
@@ -8,6 +9,6 @@ const SliderBar = ({items, indexSliderBarRef}) => {
             })}
         </div>
     );
-};
+}
 
 export default SliderBar;

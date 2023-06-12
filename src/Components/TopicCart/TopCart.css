@@ -2,7 +2,7 @@
     width: 350px;
     height: 571px;
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%), url("../../img/topiccartbackground.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%), url("../../img/topiccartbackground_1.webp");
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;

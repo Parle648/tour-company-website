@@ -5,21 +5,20 @@ import Luxury from '../../Pages/LuxuryPackages/LuxuryPackages'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../../styles.css/style.css'
 import './MainFirstBlock.style.css'
-import background from '../../img/bgtop.png'
+import Footer from "../Footer/Footer";
 
 function MainFirstBlock () {
 
     return (
         <div className="MainFirstBlock">
-            {/* <img src={background} alt="" /> */}
             <Router>
                 <Header />
-                <SearchComponent/>
                 <Routes>
-                    <Route exaxt path="/" Component={Main} className="absolute"></Route>
-                    <Route exaxt path="/luxury" Component={Luxury} className="absolute"></Route>
+                    <Route exaxt path="/" element={<Main/>} className=""></Route>
+                    <Route exaxt path="/luxury" Component={Luxury} className=""></Route>
                 </Routes>
             </Router>
+            <Footer></Footer>
         </div>
     );
 }

@@ -892,10 +892,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: 0.45s;
-  transition: 0.45s;
-  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
 }
 
 .TourCart {
@@ -1014,6 +1012,12 @@ template {
 
 .SliderBar__item_active {
   background-color: #79655E;
+}
+
+@media (max-width: 634.8px) {
+  .TourCart-description {
+    margin-right: 99px;
+  }
 }
 
 .topic-slider-line {
