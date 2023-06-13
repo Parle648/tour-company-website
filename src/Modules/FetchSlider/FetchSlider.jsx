@@ -10,8 +10,7 @@ function FetchSlider () {
     const [items, setItems] = useState([]);
     
     useEffect(() => {
-        console.log('working fetch')
-        axious.get('https://tour-company-db.onrender.com/Tours')
+        axious.get('https://data-base-second.onrender.com/Tours')
         .then(res => {
             setItems(res.data)
         })
