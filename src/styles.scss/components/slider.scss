@@ -1,6 +1,7 @@
 .FetchSlider {
     position: relative;
     margin-bottom: 128px;
+    height: 800px;
     @include md-d {
         margin-bottom: 86px;
     }

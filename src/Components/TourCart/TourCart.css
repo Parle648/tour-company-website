@@ -1,5 +1,5 @@
 .style{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%), url("../../img/slidercartphoto\ \(1\).webp");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%), url("../../img/slidercartphoto.webp");
 }
 
 .TourCart-description {
@@ -10,4 +10,9 @@
     .TourCart-description {
         margin-right: 118px;
     }
+}
+
+.TourCart__link {
+    text-decoration: none;
+    color: #fff;
 }

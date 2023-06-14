@@ -8,11 +8,13 @@ import axious from 'axios'
 function FetchSlider () {
     // get list of tours
     const [items, setItems] = useState([]);
+    const [disabled, setDisabled] = useState(true)
     
     useEffect(() => {
         axious.get('https://data-base-second.onrender.com/Tours')
         .then(res => {
             setItems(res.data)
+            setDisabled(!disabled)
         })
         .catch(err => console.log(err))
     }, []);
@@ -39,7 +41,12 @@ function FetchSlider () {
             <h2 className="FetchSlider__ttl">Top Rated Experiences</h2>
             <SliderNavigation />
             <SliderItemList margin={margin} items={items}/>
-            <SliderBtn handleClick={handleClick}/>
+            {!disabled &&
+                <SliderBtn handleClick={handleClick}/>
+            }
+            {disabled &&
+                <div className="loader"></div>
+            }
             {document.body.clientWidth < 700 &&
                 <SliderBar items={items} indexSliderBarRef={indexSliderBarRef}/>
             }

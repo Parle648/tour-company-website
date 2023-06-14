@@ -6,6 +6,15 @@
     background-size: cover;
     background-position: inherit;
 }
+.MainFirstBlock_active {
+    background: url('../../img/bgheaderinner.png');
+    height: 431px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Header_active {
+    margin: 0px auto 169px;
+}
 
 @media (max-width: 1210px) {
     .MainFirstBlock {
@@ -21,5 +30,11 @@
         background-repeat: round;
         background-size: cover;
         background-position: inherit;
+    }
+    .MainFirstBlock_active {
+        background: url('../../img/bgheaderinner.png');
+        height: 431px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

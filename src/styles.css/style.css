@@ -823,6 +823,7 @@ template {
 .FetchSlider {
   position: relative;
   margin-bottom: 128px;
+  height: 800px;
 }
 @media (max-width: 879.8px) {
   .FetchSlider {

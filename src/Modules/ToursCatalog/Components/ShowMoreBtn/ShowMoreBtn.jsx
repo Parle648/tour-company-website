@@ -4,7 +4,8 @@ import border from '../../../../img/whitebtnborder.png'
 import topCrown from '../../../../img/substracttop.svg'
 import bottomCrown from '../../../../img/substractbottom.svg'
 
-const ShowMoreBtn = ({handleClick}) => {
+const ShowMoreBtn = React.memo(({handleClick}) => {
+    console.log('render showMoreBtn')
     return (
         <button className='ShowMoreBtn' onClick={handleClick}>
             Load more
@@ -13,6 +14,6 @@ const ShowMoreBtn = ({handleClick}) => {
             <img className='ShowMoreBtn__background-border' src={border} alt="ShowMoreBtn__background-border" />
         </button>
     );
-};
+})
 
 export default ShowMoreBtn;

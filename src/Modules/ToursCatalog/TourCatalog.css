@@ -35,6 +35,8 @@
     transform: translate(-50%, 0);
     transform: translateZ(0);
     animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+    margin-top: 250px;
+    margin-bottom: 246px;
   }
   
   @keyframes mltShdSpin {

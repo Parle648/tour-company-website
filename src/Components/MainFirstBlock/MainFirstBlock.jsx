@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../../styles.css/style.css'
 import './MainFirstBlock.style.css'
 import Footer from "../Footer/Footer";
+import ProductPage from "../../Pages/ProductPage/ProductPage";
+import React from "react";
 
 function MainFirstBlock () {
 
@@ -15,7 +17,8 @@ function MainFirstBlock () {
                 <Header />
                 <Routes>
                     <Route exaxt path="/" element={<Main/>} className=""></Route>
-                    <Route exaxt path="/luxury" Component={Luxury} className=""></Route>
+                    <Route exaxt path="/luxury" element={<Luxury/>} className=""></Route>
+                    <Route exaxt path="/tour-page" element={<ProductPage></ProductPage>} className></Route>
                 </Routes>
             </Router>
             <Footer></Footer>
