@@ -32,16 +32,14 @@ const TourCatalog = props => {
                 {tourItems.map(tour => {
                     if (tourItems.indexOf(tour) < count) {
                         return (
-                            <Link exaxt to='/tour-page'>
-                                <TourCart 
-                                    key={tour.id}
-                                    location={tour.location} 
-                                    ttl={tour.title} 
-                                    mincost={tour.minCost} 
-                                    rating={tour.rating}
-                                    id={tour.id}>
-                                </TourCart>
-                            </Link>
+                            <TourCart
+                                key={tour.id}
+                                location={tour.location} 
+                                ttl={tour.title} 
+                                mincost={tour.minCost} 
+                                rating={tour.rating}
+                                id={tour.id}>
+                            </TourCart>
                         )
                     }
                 })}

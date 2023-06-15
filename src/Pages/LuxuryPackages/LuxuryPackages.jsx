@@ -7,7 +7,7 @@ import bgTopShort from '../../img/bgheaderinner.png'
 function Luxury () {
 
     React.useEffect(() => {
-        if ( document.querySelector('.active') != null ) {
+        if ( document.querySelector('.active') !== null ) {
             document.querySelector('.MainFirstBlock').classList.add('MainFirstBlock_active')
             document.querySelector('.Header').classList.add('Header_active')
         }

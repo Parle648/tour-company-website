@@ -1,6 +1,7 @@
 import locationSvg from '../../img/locationmark.svg'
 import './TourCart.css'
 import React from 'react'
+import TourRatingComponent from '../TourRatingComponent/TourRatingComponent'
 
 const TourCart = React.memo(
     ({location, ttl, mincost, rating, id}) => {
@@ -13,8 +14,8 @@ const TourCart = React.memo(
             fetch('https://data-base-second.onrender.com/Tours')
             .then(request => request.text())
             .then(result => {
-                console.log(JSON.parse(result))
                 localStorage.setItem('choosedTour', JSON.stringify(JSON.parse(result)[id]))
+                window.location.replace("/tour-page")
             })
         }
     
@@ -30,9 +31,7 @@ const TourCart = React.memo(
                         <span className="TourCart__cost">€ {mincost}</span>
                     </div>
                 </div>
-                <div className="TourCart__rating">
-                    <span className="rating-number">{rating}</span>
-                </div>
+                <TourRatingComponent rating={rating}/>
             </div>
         );
     }
