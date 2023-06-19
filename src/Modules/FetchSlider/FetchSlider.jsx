@@ -18,7 +18,7 @@ function FetchSlider () {
         })
         .catch(err => console.log(err))
     }, []);
-    
+
     //slider logic
     const [margin, setMargin] = useState(0);
     let indexSliderBarRef = useRef(0);
@@ -36,11 +36,22 @@ function FetchSlider () {
         };
     };
 
+    const [country, setCountry] = React.useState('World')
+
+    const chooseCountryMarker = (event) => {
+        event.preventDefault();
+        setCountry(event.target.innerText)
+        document.querySelectorAll('.active-link-icon').forEach(item => {
+            item.classList.remove('active-link')
+        })
+        event.target.parentNode.firstElementChild.classList.add('active-link')
+    }
+
     return (
         <div className="FetchSlider">
             <h2 className="FetchSlider__ttl">Top Rated Experiences</h2>
-            <SliderNavigation />
-            <SliderItemList margin={margin} items={items}/>
+            <SliderNavigation chooseCountry={chooseCountryMarker}/>
+            <SliderItemList margin={margin} items={items} country={country}/>
             {!disabled &&
                 <SliderBtn handleClick={handleClick}/>
             }

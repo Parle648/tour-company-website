@@ -1,0 +1,16 @@
+.DropDownList {
+    height: 55px;
+    border: 1px solid #E2D3CE;
+    border-radius: 74px;
+    background-color: #fff;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.DropDownList__head {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}

@@ -2,6 +2,11 @@
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%), url("../../img/slidercartphoto.webp");
 }
 
+.TourCart {
+    position: relative;
+    padding: 0px 33px 30px 34px;
+}
+
 .TourCart-description {
     margin-right: 149px;
 }
@@ -15,4 +20,20 @@
 .TourCart__link {
     text-decoration: none;
     color: #fff;
+}
+
+.TourCart > .TourCart__btn {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-30%, 0px);
+    color: #fff;
+    border-color: #fff;
+    transition: .35s;
+    opacity: 0;
+}
+
+.TourCart:hover > .TourCart__btn {
+    transition: .35s;
+    opacity: 1;
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import ProductInform from '../../Components/Articles/ProductInform/ProductInform';
 import TourPoster from '../../Components/Articles/TourPosterArticle/TourPosterArticle';
 import ProductLocation from '../../Components/ProductLocation/ProductLocation';
-import SubscribeModule from '../../Modules/SubscribeModule/SubscribeModule'
 
 const ProductPage = (props) => {
     const itemData = JSON.parse(localStorage.choosedTour)
@@ -25,7 +24,6 @@ const ProductPage = (props) => {
             />
             <ProductInform objectData={itemData}/>
             <ProductLocation/>
-            {/* <SubscribeModule style=''/> */}
         </div>
     );
 };

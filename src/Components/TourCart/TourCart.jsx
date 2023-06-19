@@ -2,9 +2,10 @@ import locationSvg from '../../img/locationmark.svg'
 import './TourCart.css'
 import React from 'react'
 import TourRatingComponent from '../TourRatingComponent/TourRatingComponent'
+import Btn from '../../UI/Btn/Btn'
 
 const TourCart = React.memo(
-    ({location, ttl, mincost, rating, id}) => {
+    ({location, ttl, mincost, rating, id, country}) => {
 
         const style = {
             backgroundImage: "url(/slidercartphoto.webp)"
@@ -20,7 +21,8 @@ const TourCart = React.memo(
         }
     
         return (
-            <div className="TourCart style" onClick={setToLocalStorage} id={id}>
+            <div className="TourCart style" onClick={setToLocalStorage} id={id} data-location={country}>
+                <Btn innertext='customise' className='TourCart__btn'/>
                 <div className="TourCart-description">
                     <div className="TourCart__ttl-container">
                         <span className="TourCart__location"><img className="location-mark" src={locationSvg} alt="" />{location}</span>
@@ -31,7 +33,7 @@ const TourCart = React.memo(
                         <span className="TourCart__cost">€ {mincost}</span>
                     </div>
                 </div>
-                <TourRatingComponent rating={rating}/>
+                <TourRatingComponent rating={rating} />
             </div>
         );
     }

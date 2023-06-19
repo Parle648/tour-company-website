@@ -881,6 +881,24 @@ template {
   font-weight: 400;
   line-height: 24px;
   color: #79655E;
+  position: relative;
+}
+
+.active-link-icon {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+.active-link {
+  display: block;
+}
+
+.FetchSlider__link:hover > .active-link {
+  display: block;
 }
 
 .slider-line {
@@ -895,10 +913,10 @@ template {
           justify-content: space-between;
   -webkit-transition: 0.35s;
   transition: 0.35s;
-  width: 7284px;
+  width: 1110px;
 }
 
-.TourCart {
+.slider-line > .TourCart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,14 +930,15 @@ template {
   height: 572px;
   border-radius: 10px;
   padding: 0px 191px 30px 34px;
+  margin-right: 30px;
   color: #fff;
   background-image: "url(/slidercartphoto.png)";
 }
-.TourCart:hover {
+.slider-line > .TourCart:hover {
   cursor: pointer;
 }
 @media (max-width: 634.8px) {
-  .TourCart {
+  .slider-line > .TourCart {
     width: 285px;
   }
 }
