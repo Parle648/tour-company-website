@@ -14,7 +14,8 @@ const TourRatingComponent = ({rating}) => {
         <div className='TourRatingComponent'>
             <div className='rating'>{rating}.0</div>
             <div className='stars'>
-                {starsArray.map(star => {
+                {
+                starsArray.map(star => {
                     return star ? <img src={activeStar} alt="activeStar" /> : <img src={nonActiveStar} alt="nonActiveStar" />
                 })}
             </div>

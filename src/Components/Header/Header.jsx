@@ -8,8 +8,10 @@ import React from 'react';
 
 function Header () {
     const [visible, setVisible] = useState(false)
-
+    
+    const bodyRef = React.useRef(document.body)
     function setDisabled () {
+        document.body.classList.toggle('body_hidden')
         setVisible(!visible);
     }
 

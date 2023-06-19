@@ -49,6 +49,7 @@
     align-items: center;
     justify-content: space-between;
     transition: .35s;
+    width: 7284px;
 }
 .TourCart {
     display: flex;
@@ -58,7 +59,7 @@
     height: 572px;
     border-radius: 10px;
     padding: 0px 191px 30px 34px;
-    margin-right: 30px;
+    // margin-right: 30px;
     color: #fff;
     background-image: "url(/slidercartphoto.png)";
     &:hover {

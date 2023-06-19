@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 function BurgerNavigation ({visible, setVisible}) {
-
     function closeBurger() {
+        document.body.classList.toggle('body_hidden')
         setVisible()
     }
 

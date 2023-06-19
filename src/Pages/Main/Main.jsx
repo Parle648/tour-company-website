@@ -22,8 +22,8 @@ function Main () {
         <div className="Main">
             <SearchComponent/>
             <div className='wrapper'>
-                <FetchSlider />
             </div>
+            <FetchSlider />
             <TourSliderArticle />
             <BookListArticle />
             <WhyWeArticle />

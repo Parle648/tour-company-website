@@ -1,20 +1,29 @@
 import React from 'react';
-import TourRatingComponent from '../../Components/TourRatingComponent/TourRatingComponent';
+import ProductInform from '../../Components/Articles/ProductInform/ProductInform';
+import TourPoster from '../../Components/Articles/TourPosterArticle/TourPosterArticle';
+import SubscribeModule from '../../Modules/SubscribeModule/SubscribeModule'
 
 const ProductPage = (props) => {
-    const [itemRating, setItemRating] = React.useState(JSON.parse(localStorage.choosedTour).rating)
-
-    const referense = React.useRef(0)
+    const itemData = JSON.parse(localStorage.choosedTour)
 
     React.useEffect(() => {
-        // window.location.reload();
-    }, [referense])
-
+        if ( document.querySelector('.active') === null ) {
+            document.querySelector('.MainFirstBlock').classList.add('MainFirstBlock_active')
+            document.querySelector('.Header').classList.add('Header_active')
+        }
+    }, [])
 
     return (
         <div className='ProductPage'>
-            <TourRatingComponent 
-                rating={itemRating}/>
+            <h2 className='ProductPage__ttl'>Romantic Winter Destinations</h2>
+            <TourPoster 
+                rating={itemData.rating}
+                location={itemData.location}
+                title={itemData.title}
+                minCost={itemData.minCost}
+            />
+            <ProductInform objectData={itemData}/>
+            {/* <SubscribeModule style=''/> */}
         </div>
     );
 };
