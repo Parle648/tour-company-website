@@ -1,7 +1,7 @@
 .ProductInform {
     width: 1110px;
     height: 1164px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
