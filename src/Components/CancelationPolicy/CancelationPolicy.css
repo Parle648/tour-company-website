@@ -1,0 +1,54 @@
+.CancelationPolicy {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 66px 285px 105px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.CancelationPolicy__ttl,
+.CancelationPolicy__topic-ttl {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.CancelationPolicy__topic-ttl,
+.CancelationPolicy__topic-subttl {
+    width: 539px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.CancelationPolicy__topic-subttl {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+@media (max-width: 1110px) {
+    .CancelationPolicy {
+        width: 92%;
+        height: auto;
+        padding: 26px 33px;
+    }
+}
+
+@media (max-width: 660px) {
+    .CancelationPolicy__ttl {
+        font-size: 40px;
+        text-align: start;
+        margin-bottom: 48px;
+    }
+    .CancelationPolicy__topic-ttl {
+        font-size: 30px;
+    }
+    .CancelationPolicy__topic-ttl,
+    .CancelationPolicy__topic-subttl {
+        width: 100%;
+    }
+}

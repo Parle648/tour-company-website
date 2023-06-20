@@ -5,6 +5,12 @@
 .TourCart {
     position: relative;
     padding: 0px 33px 30px 34px;
+    display: flex;
+    width: 350px;
+    height: 550px;
+    align-items: flex-end;
+    border-radius: 10px;
+    color: #fff;
 }
 
 .TourCart-description {
