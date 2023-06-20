@@ -1,4 +1,8 @@
 .DropDownList {
+    margin-bottom: 20px;
+}
+.DropDownList,
+.DropDownList__item  {
     height: 55px;
     border: 1px solid #E2D3CE;
     border-radius: 74px;
@@ -8,9 +12,73 @@
     align-items: center;
 }
 
-.DropDownList__head {
+.DropDownList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.DropDownList__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: -50%;
+    left: 24px;
+    color: #79655E;
+}
+
+.DropDownList__head  {
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
     text-align: left;
+    padding: 15px;
+    display: flex;
+}
+
+.DropDownList__head-mark {
+    margin-right: 9px;
+}
+
+.DropDownList__head-title {
+    margin-right: 117%;
+    white-space: nowrap;
+}
+
+.DropDownList__arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(-8px, -41%);
+}
+.DropDownList__arrow:hover {
+    cursor: pointer;
+}
+
+.DropDownList__body {
+    height: 55px;
+    border-radius: 74px;
+    background-color: #fff;
+    display: none;
+}
+
+.DropDownList__body_active {
+    display: block;
+}
+
+.DropDownList__item {
+    padding: 15px;
+    border-radius: 0px;
+    border: 0;
+    z-index: 6;
+    position: relative;
+}
+.DropDownList__item:hover {
+    cursor: pointer;
+    border: 1px solid #79655E;
 }

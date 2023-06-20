@@ -1,0 +1,66 @@
+.RadioInput {
+    position: relative;
+}
+.fakeRadio {
+    width: 210px;
+    height: 55px;
+    border-radius: 74px;
+    border: 1px solid #E2D3CE;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RadioInput__radio {
+    display: none;
+}
+
+.fakeRadio {
+    position: relative;
+}
+.fakeRadio:hover {
+    cursor: pointer;
+}
+
+.fakeRadio__trigger {
+    content: '';
+    width: 104px;
+    height: 49px;
+    background-color: #E2D3CE;
+    border-radius: 74px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: .35s;
+}
+
+.fakeRadio__trigger_active {
+    left: 99%;
+    transform: translate(-101%, 0px);
+    transition: .35s;
+}
+
+.fakeRadio__ttl {
+    position: absolute;
+    top: -50%;
+    left: 23px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #79655E;
+    z-index: 2;
+}
+
+.fakeRadio__choose {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+}
+
+.fakeRadio__choise {
+    z-index: 3;
+}

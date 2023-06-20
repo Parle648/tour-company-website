@@ -5,10 +5,7 @@ import notIncludeMark from '../../../img/notincludemark.svg'
 import WhiteBtn from '../../../UI/WhiteBtn/WhiteBtn';
 
 const ProductInform = ({ objectData }) => {
-
     const { title, included, notIncluded, destination, country, departure, dressCode } = objectData
-
-    console.log(objectData)
 
     return (
         <div className='ProductInform'>
