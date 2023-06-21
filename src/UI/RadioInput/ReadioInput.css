@@ -58,7 +58,6 @@
     width: 130px;
     display: flex;
     justify-content: space-between;
-    outline: none;
 }
 
 .fakeRadio__choise {

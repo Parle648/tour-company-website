@@ -16,7 +16,7 @@ const TourCart = React.memo(
             .then(request => request.text())
             .then(result => {
                 localStorage.setItem('choosedTour', JSON.stringify(JSON.parse(result)[id]))
-                window.location.replace("/tour-page")
+                window.location.replace("/tour-page/inform")
             })
         }
     

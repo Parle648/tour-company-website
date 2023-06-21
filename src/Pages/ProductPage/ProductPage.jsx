@@ -1,11 +1,14 @@
-import React from 'react';
-import ProductInform from '../../Components/Articles/ProductInform/ProductInform';
+import React, { Suspense } from 'react';
 import TourPoster from '../../Components/Articles/TourPosterArticle/TourPosterArticle';
-import CancelationPolicy from '../../Components/CancelationPolicy/CancelationPolicy';
-import ProductLocation from '../../Components/ProductLocation/ProductLocation';
-import TourPlan from '../../Components/TourPlan/TourPlan';
-import DropDownList from '../../UI/DropDownList/DropDownList';
-import RadioInput from '../../UI/RadioInput/RadioInput';
+
+import ProductInform from '../../Components/Articles/ProductInform/ProductInform';
+import {Link, Routes, Route} from 'react-router-dom'
+import TourPageNavigation from '../../Components/TourPageNavigation/TourPageNavigation';
+
+
+const TourPlan = React.lazy(() => import('../../Components/TourPlan/TourPlan.jsx'));
+const CancelationPolicy = React.lazy(() => import('../../Components/CancelationPolicy/CancelationPolicy'));
+const ProductLocation = React.lazy(() => import('../../Components/ProductLocation/ProductLocation'));
 
 const ProductPage = (props) => {
     const itemData = JSON.parse(localStorage.choosedTour)
@@ -27,12 +30,26 @@ const ProductPage = (props) => {
                 title={title}
                 minCost={minCost}
             />
-            <ProductInform objectData={itemData}/>
-            <ProductLocation/>
-            <CancelationPolicy/>
-            <TourPlan dataObject={itemData}/>
-            <RadioInput></RadioInput>
-            <DropDownList width='300px' head='Hello Pidor' body={['row first', 'row second', 'row third', 'row smth else']} title='Model of supercar'/>
+            <TourPageNavigation></TourPageNavigation>
+
+            <Routes>
+                <Route path='inform' element={<ProductInform objectData={itemData} />}></Route>
+                <Route path='tourplan' element={
+                    <Suspense fallback={<h2>Loading...</h2>}>
+                        <TourPlan dataObject={itemData}/>
+                    </Suspense>
+                }></Route>
+                <Route path='location' element={
+                    <Suspense fallback={<h2>Loading...</h2>}>
+                        <ProductLocation />
+                    </Suspense>
+                }></Route>
+                <Route path='policy' element={
+                    <Suspense fallback={<h2>Loading...</h2>}>
+                        <CancelationPolicy />
+                    </Suspense>
+                }></Route>
+            </Routes>
         </div>
     );
 };
