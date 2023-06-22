@@ -1,5 +1,6 @@
 .RadioInput {
     position: relative;
+    margin-bottom: 20px;
 }
 .fakeRadio {
     width: 210px;
@@ -13,7 +14,8 @@
 }
 
 .RadioInput__radio {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .fakeRadio {
@@ -24,20 +26,19 @@
 }
 
 .fakeRadio__trigger {
-    content: '';
     width: 104px;
     height: 49px;
     background-color: #E2D3CE;
     border-radius: 74px;
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: 99%;
+    transform: translate(-101%, 0px);
     transition: .35s;
+    top: 2px;
 }
 
 .fakeRadio__trigger_active {
-    left: 99%;
-    transform: translate(-101%, 0px);
+    left: 52%;
     transition: .35s;
 }
 

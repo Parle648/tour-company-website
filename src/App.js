@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './Components/MainFirstBlock/MainFirstBlock.style.css'
 import Footer from './Components/Footer/Footer.jsx';
 import ProductPage from './Pages/ProductPage/ProductPage.jsx';
+import CustomizePage from './Pages/CustomizePage/CustomizePage.jsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route exaxt path="/" element={<Main/>} ></Route>
                     <Route exaxt path="/luxury" element={<Luxury/>} ></Route>
                     <Route exaxt path="/tour-page/*" element={<ProductPage/>}></Route>
+                    <Route exaxt path="/customise" element={<CustomizePage/>}></Route>
                 </Routes>
             </Router>
             <Footer></Footer>

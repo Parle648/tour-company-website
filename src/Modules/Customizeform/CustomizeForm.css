@@ -1,0 +1,39 @@
+.CustomizeForm {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 730px;
+    margin: 0 auto;
+    padding: 112px 142px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 445px;
+}
+
+@media (max-width: 800px) {
+    .CustomizeForm {
+        width: 92%;
+        padding: 112px 62px;
+    }
+}
+
+@media (max-width: 640px) {
+    .CustomizeForm {
+        padding: 112px 62px;
+    }
+}
+
+@media (max-width: 530px) {
+    .CustomizeForm {
+        padding: 40px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+}

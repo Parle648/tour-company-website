@@ -3,6 +3,7 @@ import './ProductInform.css'
 import includeMark from '../../../img/includevector.svg'
 import notIncludeMark from '../../../img/notincludemark.svg'
 import WhiteBtn from '../../../UI/WhiteBtn/WhiteBtn';
+import { Link } from 'react-router-dom'
 
 const ProductInform = ({ objectData }) => {
     const { title, included, notIncluded, destination, country, departure, dressCode } = objectData
@@ -12,7 +13,7 @@ const ProductInform = ({ objectData }) => {
             {document.body.clientWidth > 1110 &&
                 <div className="ProductInform__aside-cart">
                     <div className="ProductInform__aside-cart__linear"></div>
-                    <WhiteBtn ttl='BOOK NOW' className='ProductInform__book-btn'/>
+                    <Link to='/customise'><WhiteBtn ttl='BOOK NOW' className='ProductInform__book-btn'/></Link>
                 </div>
             }
             <div className="ProductInform__content-block">
