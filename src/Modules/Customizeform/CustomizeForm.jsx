@@ -4,8 +4,12 @@ import DropDownList from '../../UI/DropDownList/DropDownList.jsx';
 import RadioInput from '../../UI/RadioInput/RadioInput.jsx';
 import PurpleInput from '../../UI/PurpleInput/PurpleInput.jsx';
 import { useForm } from 'react-hook-form';
+import BlackBtn from '../../UI/BlackBtn/BlackBtn';
+import background from '../../img/tourposterbackground.png'
+import Btn from '../../UI/Btn/Btn';
 
 const CustomizeForm = props => {
+    const {title, minCost} = JSON.parse(localStorage.choosedTour)
 
     const {
         register,
@@ -52,7 +56,19 @@ const CustomizeForm = props => {
             <PurpleInput  refer={register("Email", {
                 required: true,
             })}></PurpleInput>
-            <input type="submit" />
+            <div className='prod-img' src={background} alt="prod-img">
+                <h2 className='CustomizeForm__title'>{title}</h2>
+                <h2 className='CustomizeForm__minCost'>€ {minCost}</h2>
+            </div>
+            <label >
+                <BlackBtn innerText='Book now' width='444' onSubmit={handleSubmit(sendForm)} />
+                <input type="submit" style={{display: 'none'}}/>
+                <h2 className='or'>OR</h2>
+            </label>
+            <div className="CustomizeForm__btns-container">
+                <Btn className='CustomizeForm__btn' innertext='call me back'/>
+                <Btn className='CustomizeForm__btn' innertext='email me back '/>
+            </div>
         </form>
     );
 };

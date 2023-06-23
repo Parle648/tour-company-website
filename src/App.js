@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './styles.css/style.css'
-
 import Header from './Components/Header/Header.jsx';
 import Main from './Pages/Main/Main.jsx';
-import Luxury from './Pages/LuxuryPackages/LuxuryPackages.jsx';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// import '../../styles.css/style.css'
-import './Components/MainFirstBlock/MainFirstBlock.style.css'
 import Footer from './Components/Footer/Footer.jsx';
-import ProductPage from './Pages/ProductPage/ProductPage.jsx';
-import CustomizePage from './Pages/CustomizePage/CustomizePage.jsx';
-import BookPage from './Pages/Book/BookPage';
+import './Components/MainFirstBlock/MainFirstBlock.style.css'
 
+const CustomizePage = React.lazy(() => import('./Pages/CustomizePage/CustomizePage.jsx'))
+const Luxury = React.lazy(() => import('./Pages/LuxuryPackages/LuxuryPackages.jsx'))
+const BookPage = React.lazy(() => import('./Pages/Book/BookPage'))
+const ProductPage = React.lazy(() => import('./Pages/ProductPage/ProductPage.jsx'))
 
 function App() {
   return (
@@ -21,10 +19,26 @@ function App() {
                 <Header />
                 <Routes>
                     <Route exaxt path="/" element={<Main/>} ></Route>
-                    <Route exaxt path="/luxury" element={<Luxury/>} ></Route>
-                    <Route exaxt path="/book" element={<BookPage/>} ></Route>
-                    <Route exaxt path="/tour-page/*" element={<ProductPage/>}></Route>
-                    <Route exaxt path="/customise" element={<CustomizePage/>}></Route>
+                    <Route exaxt path="/luxury" element={
+                      <Suspense fallback={<h2>Loading...</h2>}>
+                        <Luxury/>
+                      </Suspense>} >
+                    </Route>
+                    <Route exaxt path="/book" element={
+                      <Suspense fallback={<h2>Loading...</h2>}>
+                        <BookPage/>
+                      </Suspense>} >
+                    </Route>
+                    <Route exaxt path="/tour-page/*" element={
+                      <Suspense fallback={<h2>Loading...</h2>}>
+                        <ProductPage/>
+                      </Suspense>} >
+                    </Route>
+                    <Route exaxt path="/customise" element={
+                      <Suspense fallback={<h2>Loading...</h2>}>
+                        <CustomizePage/>
+                      </Suspense>}>
+                    </Route>
                 </Routes>
             </Router>
             <Footer></Footer>
