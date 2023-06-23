@@ -7,7 +7,7 @@
     border-radius: 3em;
     position: relative;
     margin: 0 auto;
-    padding: .5em 3.2em;
+    padding: .5em .2em;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -21,12 +21,11 @@
     background-color: rgb(29, 26, 26);
 }
 
-.BlackBtn::before {
-    content: '';
+.blackSubstract {
     width: 90%;
     height: 61px;
-    border: 1px solid #000;
-    border-radius: 3em;
+    border-radius: 98.197px;
+    border: 1px solid var(--style, #0C0B10);
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -35,12 +34,14 @@
 
 .crownTop  {
     position: absolute;
-    top: -30px;
+    top: -29px;
+    background-color: #fff;
     left: 50%;
     transform: translate(-50%, 0px);
-    background: #e1d0c1;
     padding: 0px 10px;
+    z-index: 11;
     border-radius: 42px;
+    border: 1px solid #fff;
 }
 
 .crownBottom {

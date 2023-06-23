@@ -22,7 +22,7 @@ function Header () {
             <ul className='header-nav'>
                 <li className='header-nav-item'><Link className='header-link' to={'/'} relative="path">Home</Link></li>
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Luxury packages</NavLink></li>
-                <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Book with us</NavLink></li>
+                <li className='header-nav-item'><NavLink className='header-link' to={'/book'}>Book with us</NavLink></li>
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Why Lux Trips</NavLink></li>
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Contact</NavLink></li>
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Client Area</NavLink></li>

@@ -546,6 +546,7 @@ template {
   .Header {
     width: 95%;
     padding: 20px 0px;
+    margin: 0px auto 30px;
   }
 }
 @media (max-width: 634.8px) {

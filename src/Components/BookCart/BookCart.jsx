@@ -5,7 +5,7 @@ const BookCart = ({background, ttl}) => {
 
     const style = {
         background: `url(${background})`,
-        'background-position': 'center' 
+        backgroundPosition: 'center', 
     }
 
     return (
