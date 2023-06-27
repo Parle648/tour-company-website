@@ -2,6 +2,7 @@ import SliderNavigation from "./components/SliderNavigation/SliderNavigation";
 import SliderItemList from "./components/SliderItemList/SliderItemList";
 import SliderBar from "./components/SliderBar/SliderBar";
 import SliderBtn from "../../UI/SliderBtn/SliderBtn";
+import rhombus from '../../img/backgroundttl.svg'
 import React, { useState, useEffect, useRef } from "react";
 import axious from 'axios'
 
@@ -49,7 +50,11 @@ function FetchSlider () {
 
     return (
         <div className="FetchSlider">
-            <h2 className="FetchSlider__ttl">Top Rated Experiences</h2>
+            <h2 className="FetchSlider__ttl" style={{background: `url(${rhombus})`,
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'inherit',
+        }}>Top Rated Experiences</h2>
             <SliderNavigation chooseCountry={chooseCountryMarker}/>
             <SliderItemList margin={margin} items={items} country={country}/>
             {!disabled &&

@@ -1,0 +1,10 @@
+.sliderContainer {
+    margin-left: 165px;
+    overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+    .sliderContainer {
+        margin-left: 16px;
+    }
+}

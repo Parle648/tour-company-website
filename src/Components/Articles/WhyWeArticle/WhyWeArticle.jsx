@@ -33,7 +33,7 @@ const WhyWeArticle = props => {
                     <div className="WhyWeArticle__plan-container">
                         {document.body.clientWidth < 880 && Subttl }
                         <h2 className='WhyWeArticle__ttl secon__ttl third__ttl'>We craft and plan unique itineraries tailored to customers’ interests and with strong attention to detail.</h2>
-                        <Btn innertext={'help me plan a trip'}/>
+                        <Btn innertext={'help me plan a trip'} width='214px'/>
                     </div>
                 </div>
             </div>

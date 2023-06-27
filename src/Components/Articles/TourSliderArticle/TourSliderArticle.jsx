@@ -5,6 +5,11 @@ import SliderBar from '../../../Modules/FetchSlider/components/SliderBar/SliderB
 import './TourSliderArticle.style.css'
 import Btn from '../../../UI/Btn/Btn';
 // import background from '../../../img/bookbackground.png'
+import img1 from '../../../img/secondtopic.png'
+import img2 from '../../../img/firsttopic.png'
+import img3 from '../../../img/topiccartbackground_1.webp'
+import img4 from '../../../img/thirdtopic.png'
+import img5 from '../../../img/fourtopic.png'
 import { useState, useRef } from 'react';
 
 const TourSliderArticle = props => {
@@ -16,7 +21,7 @@ const TourSliderArticle = props => {
         </div>
     )
     
-    const [margin, setMargin] = useState(0)
+    const [margin, setMargin] = useState(19)
     let indexSliderBarRef = useRef(0)
 
     function moveSlider() {
@@ -35,11 +40,11 @@ const TourSliderArticle = props => {
                 {WindowWidth < 880 && topicTextContainer }
                 <div className='topic-slider-line' style={{ marginLeft: `${margin}px` }}>
                     {WindowWidth > 880 && topicTextContainer}
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '122'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-149'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '-323' : '0'} />
-                    <TopicCart ttl='Hello World' margin={WindowWidth < 1300 ? '0' : '-126'} />
+                    <TopicCart ttl='Best Winter Destinations' margin={WindowWidth < 1300 ? '0' : '122'} img={img1}/>
+                    <TopicCart ttl='The worlds most extraordinary places' margin={WindowWidth < 1300 ? '-323' : '0'} img={img2}/>
+                    <TopicCart ttl='New destinations for 2022' margin={WindowWidth < 1300 ? '0' : '-149'} img={img3}/>
+                    <TopicCart ttl='Your health is matter' margin={WindowWidth < 1300 ? '-323' : '0'} img={img4}/>
+                    <TopicCart ttl='Experiences Away From Crowd' margin={WindowWidth < 1300 ? '0' : '-126'} img={img5}/>
                 </div>
                 {WindowWidth < 880 && <SliderBtn handleClick={moveSlider} />}
                 <SliderBar items={[1, 2, 3, 4, 5]} indexSliderBarRef={indexSliderBarRef} />

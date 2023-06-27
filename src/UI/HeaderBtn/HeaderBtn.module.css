@@ -1,0 +1,35 @@
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 23px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.border {
+    width: 156px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, 0);
+    width: 22px;
+}
+
+.bottom {
+    position: absolute;
+    left: 50%;
+    bottom: -103%;
+    transform: translate(-50%, 0);
+    width: 22px;
+}

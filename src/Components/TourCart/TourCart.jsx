@@ -22,6 +22,9 @@ const TourCart = React.memo(
     
         return (
             <div className="TourCart style" onClick={setToLocalStorage} id={id} data-location={country}>
+                <div className="background-linear">
+                    
+                </div>
                 <Btn innertext='customise' className='TourCart__btn'/>
                 <div className="TourCart-description">
                     <div className="TourCart__ttl-container">

@@ -5,6 +5,7 @@ import Logo from '../../UI/Logo/Logo';
 import BurgerNavigation from '../BurgerNavigation/BurgerNavigation';
 import burger from '../../img/burgertrigger.svg'
 import React from 'react';
+import HeaderBtn from '../../UI/HeaderBtn/HeaderBtn.jsx';
 
 function Header () {
     const [visible, setVisible] = useState(false)
@@ -27,7 +28,7 @@ function Header () {
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Contact</NavLink></li>
                 <li className='header-nav-item'><NavLink className='header-link' to={'/luxury'}>Client Area</NavLink></li>
             </ul>
-            <button className='callback-btn'>Call Me <span className='rest-word'>Back</span></button>
+            <HeaderBtn text='Call Me Back' />
             <img className='burger-trigger' src={burger} alt="" onClick={setDisabled}/>
         </header>
         <BurgerNavigation visible={visible} setVisible={setVisible}/>

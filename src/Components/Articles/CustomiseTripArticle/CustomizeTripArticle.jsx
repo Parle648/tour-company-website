@@ -33,7 +33,7 @@ const CustomizeTripArticle = props => {
                 </div>
             </div>
             <br/>
-            <BlackBtn innerText={'Start a trip request'} width={document.body.clientWidth > 600 ? '540' : '302'}/>
+            <BlackBtn innerText={'Start a trip request'} width={document.body.clientWidth > 600 ? '540' : '302'} styleBackground='styleBackground'/>
             <img className='customizeImg' src={background} alt="" />
         </div>
     );

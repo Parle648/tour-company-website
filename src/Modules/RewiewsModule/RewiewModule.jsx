@@ -25,14 +25,16 @@ const RewiewModule = (props) => {
         <div className='RewiewModule'>
             <div className="RewiewModule__inner-container">
                 <h2 className='RewiewModule__ttl'>Customers reviews</h2>
-                <div className="RewiewModule__slider">
-                    <div className="RewiewModule__slider-line" style={{ margin: `0px 0px 0px ${MarginLeftRef.current}px` }}>
-                        <RewiewCart />
-                        <RewiewCart />
-                        <RewiewCart />
-                        <RewiewCart />
+                <div className="RewiewModule__slider-container">
+                    <div className="RewiewModule__slider">
+                        <div className="RewiewModule__slider-line" style={{ margin: `0px 0px 0px ${MarginLeftRef.current}px` }}>
+                            <RewiewCart />
+                            <RewiewCart />
+                            <RewiewCart />
+                            <RewiewCart />
+                        </div>
+                        <SliderBtn style='rewiew-slider-btn' handleClick={sliderMove} />
                     </div>
-                    <SliderBtn style='rewiew-slider-btn' handleClick={sliderMove} />
                 </div>
             </div>
             <img className='RewiewModule__slider__background' src={background} alt="RewiewModule__slider__background" />

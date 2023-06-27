@@ -1,7 +1,7 @@
 .WhyWeArticle {
     background-color: aqua;
     width: 100%;
-    height: 1038px;
+    height: 1126px;
     background: url("../../../img//whywebackground.webp");
     background-repeat: round;
     background-size: cover;
@@ -55,13 +55,13 @@
 
 .WhyWeArticle__plan-trip {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     position: absolute;
-    margin: -729px auto 0px;
+    margin: -813px 20px 54px;
     left: 50%;
     transform: translate(-50%, 0px);
-    width: 565px;
+    width: 787px;
 }
 
 .WhyWeArticle__img {
@@ -72,11 +72,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 42px;
 }
 
 .third__ttl {
     width: 352px;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
 }
 
 

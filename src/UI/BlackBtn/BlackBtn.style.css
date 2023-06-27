@@ -44,6 +44,10 @@
     border: 1px solid #fff;
 }
 
+.styleBackground {
+    background-color: #E2D3CE;
+}
+
 .crownBottom {
     position: absolute;
     bottom: -26px;

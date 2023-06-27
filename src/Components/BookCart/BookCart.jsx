@@ -10,7 +10,7 @@ const BookCart = ({background, ttl}) => {
 
     return (
         <div className='BookCart' style={style}>
-            <div className='BookCart__ttl'>{ttl}</div>
+            <div className='BookCart__ttl'>{ttl}</div> 
         </div>
     );
 };

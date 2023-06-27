@@ -528,7 +528,7 @@ template {
 .Header {
   width: 1351px;
   margin: 0px auto 654px;
-  padding: 24px 0px 0px;
+  padding: 36px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,11 +546,11 @@ template {
   .Header {
     width: 95%;
     padding: 20px 0px;
-    margin: 0px auto 30px;
   }
 }
 @media (max-width: 634.8px) {
   .Header {
+    margin: 0px auto 30px;
     margin: 0px auto 500px;
   }
 }
@@ -846,8 +846,10 @@ template {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 15px auto 58px;
+  margin: 56px auto 3px;
+  padding: 55px 0px;
 }
+
 @media (max-width: 879.8px) {
   .FetchSlider__ttl {
     font-size: 40px;
@@ -994,8 +996,8 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  right: 0;
-  bottom: 242px;
+  right: 111px;
+  bottom: 200px;
 }
 .SliderBtn:hover {
   cursor: pointer;
@@ -1055,6 +1057,8 @@ template {
   transition: 0.35s;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
           transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-left: 19px;
+  margin-top: 54px;
 }
 @media (max-width: 1299.8px) {
   .topic-slider-line {

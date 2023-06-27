@@ -2,11 +2,11 @@
     position: relative;
 }
 
-.RewiewModule__inner-container {
+/* .RewiewModule__inner-container {
     width: 1330px;
     margin: 0 auto;
     position: relative;
-}
+} */
 
 .RewiewModule__ttl {
     font-size: 60px;
@@ -15,7 +15,7 @@
     text-align: center;
     color: #000;
     width: 263px;
-    margin: 0 auto 89px;
+    margin: 0 auto;
     background: url('../../img/backgroundttl.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,6 @@
 }
 
 .RewiewModule__slider {
-    width: 1330px;
     height: 774px;
     display: flex;
     align-items: center;
@@ -41,7 +40,7 @@
 
 .rewiew-slider-btn {
     z-index: 1;
-    right: 0;
+    left: 87%;
 }
 
 .RewiewModule__slider-linear {
@@ -60,6 +59,11 @@
     position: absolute;
     bottom: -570px;
     z-index: -1;
+}
+
+.RewiewModule__slider-container {
+    margin-left: 165px;
+    overflow: hidden;
 }
 
 @media (max-width: 1300px) {

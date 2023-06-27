@@ -9,7 +9,7 @@
     line-height: 58px;
     text-align: center;
     width: 403px;
-    margin: 0px auto 68px;
+    margin: -206px auto 51px;
 }
 
 .CustomizeTripArticle__block {
@@ -33,17 +33,18 @@
     }
 }
 .CustomizeTripArticle__pinblock {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     border: 1px solid #fff;
     transform: matrix(0.49,0.92,-0.49,0.92,7,0);
     display: flex;
     align-items: center;
     justify-content: center;
-    left: -190px;
+    left: -203px;
+    top: 60px;
     position: absolute;
 }
-.CustomizeTripArticle__pinblock::after {
+/* .CustomizeTripArticle__pinblock::after {
     content: '';
     width: 0px;
     height: 72px;
@@ -53,10 +54,8 @@
     right: -25px;
     bottom: 1px;
     top: 85px;
-}
-.CustomizeTripArticle__pinblock::after:first-child {
-    height: 12px;
-}
+} */
+
 .number {
     font-size: 73px;
     font-weight: 400;
@@ -82,7 +81,7 @@
 }
 .customizeImg {
     width: 100%;
-    height: 1130px;
+    height: 1112px;
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -90,7 +89,7 @@
 
 .CustomizeTripArticle__clouds {
     position: absolute;
-    top: -40%;
+    top: -22%;
     z-index: -1;
     width: 100%;
 }

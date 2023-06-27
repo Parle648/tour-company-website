@@ -1,8 +1,8 @@
 import './Btn.style.css';
 
-const Btn = ({innertext, className}) => {
+const Btn = ({innertext, className, width}) => {
     return (
-        <button className={`Btn ${className}`}>{innertext}</button>
+        <button className={`Btn ${className}`} style={{width: width}}>{innertext}</button>
     );
 };
 
