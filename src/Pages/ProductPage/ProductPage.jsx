@@ -23,7 +23,14 @@ const ProductPage = (props) => {
 
     return (
         <div className='ProductPage'>
-            <h2 className='ProductPage__ttl'>Romantic Winter Destinations</h2>
+            <h2 style={{
+                width: '100%',
+                marginTop: '-139px',
+                position: 'absolute',
+                textAlign: 'center',
+                fontSize: '60px',
+                lineHeight: '58px'
+            }}>{title}</h2>
             <TourPoster 
                 rating={rating}
                 location={location}

@@ -10,7 +10,14 @@ const CustomizePage = props => {
     }, [])
     return (
         <div className='CustomizePage'>
-            <h2 className='CustomizePage__ttl'>Customize Page</h2>
+            <h2 style={{
+                width: '100%',
+                marginTop: '-139px',
+                position: 'absolute',
+                textAlign: 'center',
+                fontSize: '60px',
+                lineHeight: '58px'
+            }}>Customize trip</h2>
             <CustomizeForm></CustomizeForm>
         </div>
     );

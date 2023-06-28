@@ -35,11 +35,13 @@ const BookPage = props => {
     }
     return (
         <div className='BookPage'>
-            <h2 className='BookPage__ttl' style={{
+            <h2 style={{
+                width: '100%',
+                marginTop: '-139px',
+                position: 'absolute',
                 textAlign: 'center',
-                fontSize: '40px',
-                lineHeight: '58px',
-                marginBottom: '38px',
+                fontSize: '60px',
+                lineHeight: '58px'
             }}>Book with us</h2>
             <div className='BookPage-container' style={style}>
                 <BookPageItem backgroundUrl={backgroundUrl} title='Supercars'/>

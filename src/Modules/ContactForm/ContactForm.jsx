@@ -19,7 +19,7 @@ const ContactForm = props => {
                 type="text" name='ContactForm-phone' 
                 placeholder='Phone'/>
                 
-            <BlackBtn innerText={'Call me back'} width={viewWidth > 400 ? '350' : '261'}/>
+            <BlackBtn innerText={'Call me back'} width={viewWidth > 400 ? '350' : '261'} styleBackground='ContactForm__btn'/>
         </form>
     );
 };

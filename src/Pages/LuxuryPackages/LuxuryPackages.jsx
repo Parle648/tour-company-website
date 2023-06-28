@@ -15,6 +15,14 @@ function Luxury () {
 
     return (
         <div className="Luxury">
+            <h2 style={{
+                width: '100%',
+                marginTop: '-139px',
+                position: 'absolute',
+                textAlign: 'center',
+                fontSize: '60px',
+                lineHeight: '58px'
+            }}>Luxury packages</h2>
             <SearchComponent />
             <TourCatalog/>
             <SubscribeModule style='Luxury-subscribe'/>

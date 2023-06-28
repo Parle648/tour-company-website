@@ -15,7 +15,7 @@ const SubscribeModule = ({style}) => {
             <h2 className='SubscribeModule__subttl'>Sign up for our Weekly Newsletter</h2>
             <label className='SubscribeModule__label'>
                 <input className='SubscribeModule__input' type="text" name='mail' value={inputValue} onChange={changeValue}/>
-                <WhiteBtn/>
+                <WhiteBtn className='SubscribeModule__btn'/> 
             </label>
         </div>
     );

@@ -20,12 +20,16 @@
 }
 
 .RewiewCart__inner-block{
-    padding: 61px 66px 72px 89px;
+    padding: 39px 66px 96px 89px;
     background: rgba(226, 211, 206, 0.2);
     backdrop-filter: blur(10px);
     border: 1px solid #FFFFFF;
     border-radius: 10px;
     width: 636px;
+}
+
+.RewiewCart__user-photo {
+    margin-left: -22px;
 }
 
 .RewiewCart__rewiew {
@@ -64,6 +68,9 @@
         width: 250px;
         font-size: 18px;
         margin-bottom: 35px;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 37px;
     }
     .RewiewCart__backgroundSide {
         width: 104%;

@@ -5,7 +5,6 @@ import topCrown from '../../../../img/substracttop.svg'
 import bottomCrown from '../../../../img/substractbottom.svg'
 
 const ShowMoreBtn = React.memo(({handleClick}) => {
-    console.log('render showMoreBtn')
     return (
         <button className='ShowMoreBtn' onClick={handleClick}>
             Load more

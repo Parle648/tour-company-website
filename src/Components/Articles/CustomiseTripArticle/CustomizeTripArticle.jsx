@@ -34,6 +34,7 @@ const CustomizeTripArticle = props => {
             </div>
             <br/>
             <BlackBtn innerText={'Start a trip request'} width={document.body.clientWidth > 600 ? '540' : '302'} styleBackground='styleBackground'/>
+            <h2 className='customizeBtn__ttl'>It’s Free! - no credit card required</h2>
             <img className='customizeImg' src={background} alt="" />
         </div>
     );

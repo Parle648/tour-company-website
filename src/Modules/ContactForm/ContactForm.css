@@ -36,7 +36,11 @@
 }
 
 .last-input {
-    margin-bottom: 53px;
+    margin-bottom: 26px;
+}
+
+.ContactForm__btn {
+    background-color: #E2D3CE;
 }
 
 @media (max-width: 1020px) {

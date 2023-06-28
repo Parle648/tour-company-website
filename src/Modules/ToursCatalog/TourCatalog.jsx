@@ -20,7 +20,7 @@ const TourCatalog = props => {
             setLoaderDisabled(false)
         })
     }, [])
-    
+
     const ShowMore = React.useCallback(() => {
         setCount(count += countDisplayToursRef.current)
     }, [])
@@ -29,8 +29,8 @@ const TourCatalog = props => {
         <div className='TourCatalog'>
             <div className="TourCatalog__list">
                 {loaderDisabled && <div class="loader"></div>}
-                {tourItems.map(tour => {
-                    if (tourItems.indexOf(tour) < count) {
+                {tourItems.data != undefined && tourItems.data.map(tour => {
+                    if (tourItems.data.indexOf(tour) < count) {
                         return (
                             <TourCart
                                 key={tour.id}
@@ -44,7 +44,7 @@ const TourCatalog = props => {
                     }
                 })}
             </div>
-            {count < tourItems.length && <ShowMoreBtn handleClick={ShowMore}></ShowMoreBtn>}
+            {(tourItems.data != undefined && count < tourItems.data.length )&& <ShowMoreBtn handleClick={ShowMore}></ShowMoreBtn>}
         </div>
     );
 };
