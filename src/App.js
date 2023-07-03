@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles.css/style.css'
 import Header from './Components/Header/Header.jsx';
 import Main from './Pages/Main/Main.jsx';
@@ -10,6 +10,7 @@ const CustomizePage = React.lazy(() => import('./Pages/CustomizePage/CustomizePa
 const Luxury = React.lazy(() => import('./Pages/LuxuryPackages/LuxuryPackages.jsx'))
 const BookPage = React.lazy(() => import('./Pages/Book/BookPage'))
 const ProductPage = React.lazy(() => import('./Pages/ProductPage/ProductPage.jsx'))
+const CarBook = React.lazy(() => import('./Pages/BookCarPage/BookCar.jsx'))
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
                     <Route exaxt path="/customise" element={
                       <Suspense fallback={<h2>Loading...</h2>}>
                         <CustomizePage/>
+                      </Suspense>}>
+                    </Route>
+                    <Route exaxt path="/car" element={
+                      <Suspense fallback={<h2>Loading...</h2>}>
+                        <CarBook/>
                       </Suspense>}>
                     </Route>
                 </Routes>

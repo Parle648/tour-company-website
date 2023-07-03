@@ -60,6 +60,14 @@
     padding: 0;
 }
 
+.error {
+    color: orangered;
+    text-align: start;
+    width: 100%;
+    margin-left: 138px;
+    margin-bottom: -24px;
+}
+
 @media (max-width: 800px) {
     .CustomizeForm {
         width: 92%;

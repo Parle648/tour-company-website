@@ -19,12 +19,12 @@ const CustomizeForm = props => {
         handleSubmit,
         reset,
     } = useForm({
-        method: 'onBlur'
+        mode: 'onBlur',
     })
 
     const sendForm = (data) => {
         console.log(data)
-        reset()
+        reset();
     }
 
     return (
@@ -50,12 +50,32 @@ const CustomizeForm = props => {
                 <DropDownList head='2' body={['Choose', 'asd', 'asd']} width='210px' title='Number of people' refs={register("Select10")}></DropDownList>
                 <RadioInput refer={register("DriverSecond")}></RadioInput>
             </div>
-            <PurpleInput  refer={register("Name", {
+
+            <p className="error">
+                {errors.Name?.message}
+            </p>
+            <PurpleInput inputName='Name' refer={register("Name", {
                 required: true,
+                pattern: {
+                    value: /^[A-ZA-Z][a-zA-Z0-9-_\.]{1,20}$/,
+                    message: 'this input should begin from capital character',
+                },
+                minLength: {
+                    value: 3,
+                    message: 'this input should be biggest then 3 characters',
+                },
             })} ></PurpleInput>
-            <PurpleInput  refer={register("Email", {
+            <p className="error">
+                {errors.Email?.message}
+            </p>
+            <PurpleInput inputName='Email' refer={register("Email", {
                 required: true,
+                pattern: {
+                    value: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
+                    message: 'this input should be email',
+                },
             })}></PurpleInput>
+
             <div className='prod-img' src={background} alt="prod-img">
                 <h2 className='CustomizeForm__title'>{title}</h2>
                 <h2 className='CustomizeForm__minCost'>€ {minCost}</h2>
