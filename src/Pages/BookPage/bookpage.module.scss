@@ -1,0 +1,17 @@
+@import '../../Scss/__global.scss/global.scss';
+
+.BookPage {
+    width: 1110px;
+    margin: 0 auto 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    @include lg-d {
+        width: 92%;
+        margin: 0 auto 350px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 28px;
+    }
+}

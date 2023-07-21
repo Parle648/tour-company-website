@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-import activeSvg from '../../img/navigationicon.png'
-import './TourPageNavigation.css'
+import { NavLink } from 'react-router-dom';
+import activeSvg from '../../img/navigationicon.png';
+import './TourPageNavigation.scss';
 
 const TourPageNavigation = props => {
 

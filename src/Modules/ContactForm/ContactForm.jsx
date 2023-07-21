@@ -1,6 +1,6 @@
 import React from 'react';
-import './ContactForm.css'
-import BlackBtn from '../../UI/BlackBtn/BlackBtn'
+import './ContactForm.scss'
+import BlackBtn from '../../components/UI/BlackBtn/BlackBtn.jsx';
 
 const ContactForm = props => {
 
@@ -19,7 +19,7 @@ const ContactForm = props => {
                 type="text" name='ContactForm-phone' 
                 placeholder='Phone'/>
                 
-            <BlackBtn innerText={'Call me back'} width={viewWidth > 400 ? '350' : '261'} styleBackground='ContactForm__btn'/>
+            <BlackBtn innerText={'Call me back'} styleBackground='ContactForm__btn'/>
         </form>
     );
 };

@@ -1,0 +1,36 @@
+@import '../../Scss/__global.scss/global.scss';
+
+.BookPageItem {
+    background-color: #fff;
+    width: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    transition-duration: .35s;
+    border-radius: 10px;
+}
+
+.BookPageItem:hover {
+    cursor: pointer;
+}
+
+.BookPageItem__paragraph {
+    width: 410px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Manrope;
+    line-height: 36px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.BookPageItem,
+.BookPageItem__paragraph {
+    @include md-d {
+        width: 92%;
+    }
+}

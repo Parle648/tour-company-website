@@ -1,0 +1,23 @@
+@import '../../Scss/__global.scss/global.scss';
+
+.FetchSlider {
+    position: relative;
+    margin-bottom: 126px;
+    @include md-d {
+        margin-bottom: 83px;
+    }
+}
+
+.FetchSliderTtl {
+    background-position: center center;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    width: 287px;
+    margin: 0 auto 8px;
+    line-height: 58px;
+    padding: 49px 0px;
+    background-color: initial;
+}

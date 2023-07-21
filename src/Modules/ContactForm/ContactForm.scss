@@ -1,0 +1,64 @@
+@import '../../Scss/__global.scss/global.scss';
+@import '../../Scss/__mixins/mixins.scss';
+
+.ContactForm {
+    height: 500px;
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(226, 211, 206, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    width: 920px;
+    height: 500px;
+    padding: 76px;
+    margin: 370px auto 0px;
+
+    @include lg-d {
+        width: 97%;
+        padding: 52px 24px;
+    }
+
+    @include md-d {
+        margin: 0px auto;
+        height: 444px;
+    }
+}
+
+.ContactForm__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.ContactForm__input {
+    @include Manrope(14px, 400);
+    margin-bottom: 14px;
+    display: block;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 95px;
+    padding: 15px 153px;
+    width: 350px;
+
+    @include md-d {
+        padding: 13px 91px;
+        width: 224px;
+        height: 55px;
+    }
+}
+
+.last-input {
+    margin-bottom: 26px;
+}
+
+.ContactForm__btn {
+    background-color: #E2D3CE;
+}

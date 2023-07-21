@@ -1,0 +1,104 @@
+@import '../../../Scss/__global.scss/global.scss';
+
+.TourSliderArticle {
+    margin-bottom: 117px;
+    background: linear-gradient(180deg, #E2D3CE 0%, #C9C8D8 30.73%, #D4D8C6 59.37%, #E2D3CE 100%);
+    position: relative;
+
+    @include md-d {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 15px;
+    }
+}
+
+.topic-slider__ttl {
+    text-align: start;
+    margin-top: 118px;
+    @include md-d {
+        margin-top: 0;
+    }
+}
+
+.tourSlider__btn {
+    width: 140px;
+    height: 38px;
+    padding: 0.66em 1.5em;
+}
+
+.topic-slider-line {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-gap: 24px 30px;
+    justify-content: center;
+    position: relative;
+    transition: 0.35s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: 54px;
+    @include xl-d {
+        grid-template-columns: repeat(2, 350px);
+    };
+    @include md-d {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 1540px;
+    }
+}
+.topic-slider-text-container {
+    z-index: 1;
+    position: relative;
+}
+@media (max-width: 879.8px) {
+    .topic-slider-text-container {
+        z-index: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 97%;
+    }
+}
+
+.topic-slider__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 879.8px) {
+    .topic-slider__ttl {
+        line-height: 30px;
+        font-size: 28px;
+    }
+}
+
+.topic-slider-wrapper {
+    position: relative;
+}
+
+.topic-slider-btn {
+    display: none;
+}
+
+@media (max-width: 879.8px) {
+    .topic-slider-btn {
+        display: flex;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .BookListArticle__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.backround-img {
+    min-width: 100%;
+    position: absolute;
+    bottom: -553px;
+    z-index: 0;
+}

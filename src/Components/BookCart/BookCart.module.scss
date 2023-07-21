@@ -1,0 +1,62 @@
+@import '../../Scss/__mixins/mixins.scss';
+@import '../../Scss/__global.scss/global.scss';
+
+.BookCart {
+    position: relative;
+    width: 540px;
+    height: 191px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-position: center;
+    cursor: pointer;
+    @include md-d {
+        font-size: 31px;
+        width: 100%;
+    }
+}
+
+.BookCart__ttl {
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    text-align: center;
+    @include Forum(44px);
+    font-style: normal;
+    line-height: 98.5%;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    @include md-d {
+        font-size: 31px;
+        text-align: center;
+    }
+}
+
+.BookCart__ttl::before {
+    content: '';
+    z-index: -1;
+    width: 126px;
+    height: 64px;
+    border: 1px solid rgba(121, 101, 94, 1);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    position: absolute;
+    background-color: #ffffff36;
+    filter: blur(10px);
+}
+
+.BookCart__ttl::after {
+    content: '';
+    background: url('../../img/bookinnerborder.svg');
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 141px;
+    height: 75px;
+    z-index: -1;
+}

@@ -1,8 +1,7 @@
 import React from 'react';
-import Btn from '../../UI/Btn/Btn';
+import './Footer.scss'
 import footerLogo from '../../img/footerlogo.svg'
-import './Footer.css'
-import HeaderBtn from '../../UI/HeaderBtn/HeaderBtn';
+import HeaderBtn from '../UI/HeaderBtn/HeaderBtn';
 
 const Footer = props => {
 

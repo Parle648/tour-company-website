@@ -1,5 +1,5 @@
 import React from 'react';
-import './BookCart.style.css'
+import styles from './BookCart.module.scss';
 
 const BookCart = ({background, ttl}) => {
 
@@ -9,8 +9,8 @@ const BookCart = ({background, ttl}) => {
     }
 
     return (
-        <div className='BookCart' style={style}>
-            <div className='BookCart__ttl'>{ttl}</div> 
+        <div className={styles.BookCart }style={style}>
+            <div className={styles.BookCart__ttl}>{ttl}</div> 
         </div>
     );
 };

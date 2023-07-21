@@ -1,0 +1,83 @@
+@import '../../Scss/__mixins/mixins.scss';
+
+.style{
+    background: url("../../img/slidercartphoto.webp");
+}
+
+.TourCart {
+    position: relative;
+    padding: 0px 33px 30px 34px;
+    display: flex;
+    width: 350px; 
+    height: 570px;
+    align-items: flex-end;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.background-linear {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 335px;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0B2034 100%);
+}
+
+.TourCart-description {
+    margin-right: 149px;
+    z-index: 5;
+}
+
+@media (max-width: 700px) {
+    .TourCart-description {
+        margin-right: 118px;
+    }
+}
+
+.TourCart__ttl {
+    color: #FFF;
+    @include Forum(36px);
+    font-style: normal;
+    line-height: 98.5%;
+    text-align: inherit;
+    margin-bottom: 30px;
+}
+
+.TourCart__mincost {
+    color: #FFF;
+    @include Manrope(12px, 500);
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: inherit;
+}
+
+.TourCart__cost {
+    color: #FFF;
+    @include Forum(24px);
+    font-style: normal;
+    line-height: 98.5%;
+}
+
+.TourCart__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.TourCart > .TourCart__btn {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translate(-30%, 0px);
+    color: #fff;
+    border-color: #fff;
+    transition: .35s;
+    opacity: 0;
+}
+
+.TourCart:hover > .TourCart__btn {
+    transition: .35s;
+    opacity: 1;
+}

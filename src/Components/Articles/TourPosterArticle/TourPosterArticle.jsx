@@ -1,8 +1,10 @@
 import React from 'react';
 import TourRatingComponent from '../../TourRatingComponent/TourRatingComponent';
 import locationSvg from '../../../img/locationmark.svg';
-import './TourPosterArticle.css';
-import WhiteBtn from '../../../UI/WhiteBtn/WhiteBtn';
+import './TourPosterArticle.scss';
+import WhiteBtn from '../../UI/WhiteBtn/WhiteBtn.jsx';
+
+import { Link } from 'react-router-dom';
 
 const TourPoster = ({backgroundImg, title, rating, minCost, location}) => {
     return (
@@ -14,7 +16,7 @@ const TourPoster = ({backgroundImg, title, rating, minCost, location}) => {
                 }
                 <div className="TourPoster__description">
                     <span className=""><img className="" src={locationSvg} alt="location-mark" />{location}</span>
-                    <h2 className="">{title}</h2>
+                    <h2 className="TourPoster__description_ttl">{title}</h2>
                 </div>
                 {document.body.clientWidth < 780 &&
                     <div className="cost">
@@ -34,7 +36,9 @@ const TourPoster = ({backgroundImg, title, rating, minCost, location}) => {
                 <TourRatingComponent rating={rating} />
             }
             {document.body.clientWidth > 780 && 
-                <WhiteBtn ttl={'BOOK NOW'} className='TourPoster__book-btn'/>
+                <Link to='/customise'>
+                    <WhiteBtn ttl={'BOOK NOW'} className='TourPoster__book-btn'/>
+                </Link>
             }
         </div>
     );

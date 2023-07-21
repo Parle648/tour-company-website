@@ -1,0 +1,24 @@
+@import '../../../../Scss/__global.scss/global.scss';
+
+.SliderBar {
+    width: 92%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px;
+    display: none;
+    @include md-d {
+        display: flex;
+    }
+}
+
+.SliderBar__item {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.SliderBar__item_active {
+    background-color: #79655E;
+}
+  

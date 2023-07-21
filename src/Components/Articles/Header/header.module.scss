@@ -1,0 +1,50 @@
+@import '../../../Scss/__mixins/mixins.scss';
+@import '../../../Scss/__global.scss/global.scss';
+
+.header {
+    width: 1351px;
+    margin: 0px auto;
+    padding: 24px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    @include xl-d {
+        width: 100%;
+        padding: 20px 0px;
+    }
+    @include md-d {
+        margin: 0px auto 422px;
+    }
+}
+
+.modileBtn {
+    display: none;
+    text-align: center;
+
+    @include Forum(16px);
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.64px;
+
+    padding: 10px 13px;
+    border: 1px solid #fff;
+    border-radius: 61px;
+
+    @include xl-d {
+        display: flex;
+    }
+}
+
+.burgerBtn {
+    display: none;
+    @include xl-d {
+        display: flex;
+    }
+}
+
+.bodyHidden {
+    overflow-y: hidden;
+}

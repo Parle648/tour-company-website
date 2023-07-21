@@ -1,9 +1,8 @@
 import React from 'react';
-import './TourCatalog.css'
+import './TourCatalog.scss'
 import getTours from './api/fetchTours';
-import TourCart from '../../Components/TourCart/TourCart'
+import TourCart from '../../components/TourCart/TourCart.jsx';
 import ShowMoreBtn from './Components/ShowMoreBtn/ShowMoreBtn';
-import { Link } from 'react-router-dom'
 
 const TourCatalog = props => {
     const displayWidth = document.body.clientWidth
@@ -11,7 +10,7 @@ const TourCatalog = props => {
     
     const [tourItems, setTourItems] = React.useState([])
     const [loaderDisabled, setLoaderDisabled] = React.useState(true)
-    let [count, setCount] = React.useState((displayWidth > 700 ? 9 : 4))
+    const [count, setCount] = React.useState((displayWidth > 700 ? 9 : 4))
 
     React.useEffect(() => {
         const tours = getTours();
@@ -29,7 +28,7 @@ const TourCatalog = props => {
         <div className='TourCatalog'>
             <div className="TourCatalog__list">
                 {loaderDisabled && <div class="loader"></div>}
-                {tourItems.data != undefined && tourItems.data.map(tour => {
+                {tourItems.data !== undefined && tourItems.data.map(tour => {
                     if (tourItems.data.indexOf(tour) < count) {
                         return (
                             <TourCart
@@ -44,7 +43,7 @@ const TourCatalog = props => {
                     }
                 })}
             </div>
-            {(tourItems.data != undefined && count < tourItems.data.length )&& <ShowMoreBtn handleClick={ShowMore}></ShowMoreBtn>}
+            {(tourItems.data !== undefined && count < tourItems.data.length ) && <ShowMoreBtn handleClick={ShowMore}></ShowMoreBtn>}
         </div>
     );
 };

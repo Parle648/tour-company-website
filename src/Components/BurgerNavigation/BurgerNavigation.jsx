@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom'
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from '../Articles/Header/header.module.scss';
+import './burger-navigation.scss';
 
-function BurgerNavigation ({visible, setVisible}) {
+const BurgerNavigation = ({visible, setVisible}) => {
     function closeBurger() {
-        document.body.classList.toggle('body_hidden')
+        document.body.classList.toggle(styles.bodyHidden)
         setVisible()
     }
 
@@ -12,13 +14,13 @@ function BurgerNavigation ({visible, setVisible}) {
             <ul className='burder-nav'>
                 <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/'} relative="path">Home</Link></li>
                 <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/luxury'}>Luxury packages</Link></li>
-                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/luxury'}>Book with us</Link></li>
-                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/luxury'}>Why Lux Trips</Link></li>
-                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/luxury'}>Contact</Link></li>
-                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/luxury'}>Client Area</Link></li>
+                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/book'}>Book with us</Link></li>
+                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/book'}>Why Lux Trips</Link></li>
+                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/book'}>Contact</Link></li>
+                <li className='burder-nav-item' onClick={closeBurger}><Link className='burder-nav-link' to={'/book'}>Client Area</Link></li>
             </ul>
         </div>
     );
-}
+};
 
-export default BurgerNavigation
+export default BurgerNavigation;

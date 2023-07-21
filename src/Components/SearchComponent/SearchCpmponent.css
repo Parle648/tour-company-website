@@ -1,9 +1,0 @@
-.last-item {
-    width: 39px;
-}
-
-@media (max-width: 500px) {
-    .SearchBtn {
-        width: 300px;
-    }
-}

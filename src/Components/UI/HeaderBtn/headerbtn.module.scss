@@ -1,0 +1,47 @@
+@import '../../../Scss/__global.scss/global.scss';
+
+.btn {
+    width: 156px;
+    height: 40px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 23px;
+    margin-right: 5px;
+    @include xl-d {
+        display: none;
+    };
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.border {
+    width: 156px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top {
+    position: absolute;
+    left: 50%;
+    top: -16%;
+    transform: translate(-50%, 0);
+    width: 22px;
+}
+
+.bottom {
+    position: absolute;
+    left: 50%;
+    bottom: -24%;
+    transform: translate(-50%, 0);
+    width: 22px;
+}
+
+.headerBackground {
+    background: url('../../../img/bgtop.jpg');
+}

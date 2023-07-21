@@ -1,0 +1,41 @@
+@import '../../../../Scss/__global.scss/global.scss';
+
+.sliderContainer {
+  margin-left: 165px;
+  overflow: hidden;
+  @include xl-d {
+      margin-left: 16px;
+  }
+}
+
+.slider-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  width: 1110px;
+}
+  
+.slider-line > .TourCart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 350px;
+  height: 572px;
+  border-radius: 10px;
+  padding: 0px 191px 30px 34px;
+  margin-right: 30px;
+  color: #fff;
+  background-image: "url(/slidercartphoto.png)";
+}
+
+.slider-line > .TourCart:hover {
+  cursor: pointer;
+}
+
+.slider-line > .TourCart {
+  @include md-d {
+    width: 285px;
+  }
+}

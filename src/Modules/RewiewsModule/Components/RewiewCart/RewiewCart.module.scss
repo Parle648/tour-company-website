@@ -1,0 +1,92 @@
+@import '../../../../Scss//__global.scss/global.scss';
+@import '../../../../Scss/__mixins/mixins.scss';
+
+.RewiewCart {
+    position: relative;
+    width: 636px;
+    margin-right: 94px;
+
+    @include md-d {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.RewiewCart__backgroundSide,
+.RewiewCart__backgroundTopSide {
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    transform: translate(-50%, 0);
+}
+
+.RewiewCart__backgroundSide {
+    @include md-d {
+        width: 104%;
+        height: 103%;
+    }
+}
+
+
+.RewiewCart__backgroundTopSide {
+    background-color: #E2D3CE;
+    padding: 4px 47px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.RewiewCart__inner_block {
+    padding: 39px 66px 96px 89px;
+    background: rgba(226, 211, 206, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    width: 636px;
+
+    @include md-d {
+        padding: 40px 20px 55px;
+        width: 300px;
+    }
+}
+
+.RewiewCart__user_photo {
+    margin-left: -22px;
+}
+
+.RewiewCart__rewiew {
+    @include Manrope(21px, 300);
+    line-height: 37px;
+    width: 481px;
+    margin-bottom: 88px;
+
+    @include md-d {
+        width: 250px;
+        font-size: 18px;
+        margin-bottom: 35px;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 37px;
+    }
+}
+
+.RewiewCart__username {
+    @include Manrope(21px, 500);
+    line-height: 18px;
+    margin-bottom: 6px;
+    text-align: start
+}
+
+.RewiewCart__trip {
+    @include Manrope(17px, 300);
+    line-height: 16px;
+    text-align: start
+}
+
+.rewiew_slider_btn {
+    @include md-d {
+        right: 29px;
+        bottom: 94px;
+    }
+}

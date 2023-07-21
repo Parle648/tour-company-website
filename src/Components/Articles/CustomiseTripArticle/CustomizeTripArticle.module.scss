@@ -1,0 +1,187 @@
+@import '../../../Scss/__global.scss/global.scss';
+@import '../../../Scss/__mixins/mixins.scss';
+
+.CustomizeTripArticle {
+    width: 100%;
+    height: 1607px;
+    position: relative;
+}
+
+.CustomizeTripArticle__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    width: 403px;
+    margin: -206px auto 51px;
+
+    @include md-d {
+        width: 300px;
+    }
+}
+
+.CustomizeTripArticle__block {
+    width: 250px;
+    padding-top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 92px;
+    margin-left: -48px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-5%, 10px);
+
+    @include md-d {
+        transform: translate(-20%, 10px);
+    }
+}
+
+.pins_container {
+    margin: 0px auto;
+}
+
+.CustomizeTripArticle__pinblock {
+    width: 115px;
+    height: 115px;
+    border: 1px solid #fff;
+    transform: matrix(0.49, 0.92, -0.49, 0.92, 7, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -203px;
+    top: 60px;
+    position: absolute;
+
+    @include md-d {
+        left: -188px;
+        width: 50px;
+        height: 50px;
+        margin-left: 116px;
+        margin-top: 15px;
+    }
+}
+
+.number {
+    font-size: 73px;
+    font-weight: 400;
+    line-height: 81px;
+    transform: rotate(315deg);
+
+    @include md-d {
+        font-size: 29px;
+    }
+}
+
+.CustomizeTripArticle__block_ttl {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 12px;
+    width: 253px;
+    text-align: start;
+}
+
+.CustomizeTripArticle__block_subttl {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    width: 250px;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.customizeBtn__ttl {
+    text-align: center;
+    font-size: 16.8px;
+    margin-top: -55px;
+}
+
+.customizeImg {
+    width: 100%;
+    height: 1110px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.CustomizeTripArticle__clouds {
+    position: absolute;
+    top: -22%;
+    z-index: -1;
+    width: 100%;
+}
+
+//@at-root
+
+.BlackBtn {
+    width: 540px;
+    height: 55px;
+    margin: 38px auto 26px;
+    background-color: black;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 3em;
+    position: relative;
+    padding: .5em .2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+    @include Forum(24px);
+    cursor: pointer;
+}
+
+.blackSubstract {
+    width: 90%;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.crownTop  {
+    position: absolute;
+    top: -29px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    padding: 0px 10px;
+    z-index: 11;
+    border-radius: 42px;
+}
+
+.styleBackground {
+    background-color: #E2D3CE;
+}
+
+.crownBottom {
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background: transparent;
+    padding: 0px 10px;
+    border-radius: 42px;
+}
+
+@media (max-width: 600px) {
+    .BlackBtn {
+        padding: 0.5em .6em;
+        width: 344px;
+    }
+}
+
+.btnSubttl {
+    @include Manrope(16px, 400);
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    text-align: center;
+}

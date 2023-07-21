@@ -1,0 +1,46 @@
+@import '../../Scss/__global.scss/global.scss';
+
+.BurgerNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E2D3CE;
+  padding: 99px 40px 51px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 107vh;
+  opacity: 0;
+  transition: 0.35s;
+  z-index: -1;
+  pointer-events: none;
+}
+  
+.burder-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burder-nav-item {
+  margin-bottom: 64px;
+}
+
+.burder-nav-link {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+  
+.burger_disabled {
+  opacity: 1;
+  pointer-events: all;
+}
+  
+.burger-trigger {
+  display: none;
+  @include xl-d {
+    display: flex;
+  }
+}

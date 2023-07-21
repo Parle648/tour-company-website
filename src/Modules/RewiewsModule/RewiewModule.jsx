@@ -1,7 +1,7 @@
 import React from 'react';
-import './RewiewModule.style.css'
+import styles from './RewiewModule.module.scss';
 import RewiewCart from './Components/RewiewCart/RewiewCart';
-import SliderBtn from '../../UI/SliderBtn/SliderBtn';
+import SliderBtn from '../../components/UI/SliderBtn/SliderBtn';
 import background from '../../img/rewiewbackground.png'
 
 const RewiewModule = (props) => {
@@ -22,22 +22,22 @@ const RewiewModule = (props) => {
     }
 
     return ( 
-        <div className='RewiewModule'>
-            <div className="RewiewModule__inner-container">
-                <h2 className='RewiewModule__ttl'>Customers reviews</h2>
-                <div className="RewiewModule__slider-container">
-                    <div className="RewiewModule__slider">
-                        <div className="RewiewModule__slider-line" style={{ margin: `0px 0px 0px ${MarginLeftRef.current}px` }}>
+        <div className={styles.RewiewModule}>
+            <div className={styles.RewiewModule__inner_container}>
+                <h2 className={styles.RewiewModule__ttl}>Customers reviews</h2>
+                <div className={styles.RewiewModule__slider_container}>
+                    <div className={styles.RewiewModule__slider}>
+                        <div className={styles.RewiewModule__slider_line} style={{ margin: `0px 0px 0px ${MarginLeftRef.current}px` }}>
                             <RewiewCart />
                             <RewiewCart />
                             <RewiewCart />
                             <RewiewCart />
                         </div>
-                        <SliderBtn style='rewiew-slider-btn' handleClick={sliderMove} />
+                        <SliderBtn style={styles.rewiew_slider_btn} handleClick={sliderMove} />
                     </div>
                 </div>
             </div>
-            <img className='RewiewModule__slider__background' src={background} alt="RewiewModule__slider__background" />
+            <img className={styles.RewiewModule__slider__background} src={background} alt="RewiewModule__slider__background" />
         </div>
     );
 }

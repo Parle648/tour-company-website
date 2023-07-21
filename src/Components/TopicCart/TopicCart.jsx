@@ -1,5 +1,5 @@
-import './TopCart.css'
-import rhombus from '../../img/rhombus.svg'
+import './TopCart.scss';
+import rhombus from '../../img/rhombus.svg';
 import React from 'react';
 
 const TopicCart = ({ttl, margin, img}) => {

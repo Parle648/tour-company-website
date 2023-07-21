@@ -1,0 +1,160 @@
+@import '../../../Scss/__global.scss/global.scss';
+@import '../../../Scss/__mixins/mixins.scss';
+
+.WhyWeArticle {
+    width: 100%;
+    height: 1126px;
+    background: url("../../../img//whywebackground.webp");
+    background-repeat: round;
+    background-size: cover;
+    background-position: inherit;
+    margin-bottom: 616px;
+
+    @include xl-d {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.WhyWeArticle__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @include xl-d {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.WhyWeArticle__ttl {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    width: 310px;
+    margin-right: -11px;
+    overflow: hidden;
+    text-align: start;
+
+    @include xl-d {
+        margin-bottom: 23px;
+        width: 213px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 44px;
+    }
+}
+
+.WhyWeArticle__subttl {
+    @include Manrope(16px, 400);
+    width: 254px;
+    font-style: normal;
+    line-height: 179.8%;
+    margin-left: -14px;
+}
+
+.WhyWeArticle__pins {
+    display: flex;
+    margin: 0 auto;
+    width: 1086px;
+
+    @include xl-d {
+        width: 50%;
+    }
+
+    @include lg-d {
+        width: 85%;
+        margin: 0px auto 150px;
+    }
+}
+
+.description__second {
+    margin-top: -176px;
+}
+
+.secon__ttl {
+    width: 255px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: none;
+    margin-right: 47px;
+
+    @include xl-d {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    @include lg-d {
+        width: 88%;
+        font-size: 40px;
+        margin: 0 0 16px 17px;
+        font-weight: 400;
+        line-height: 39px;
+        text-align: start;
+    }
+}
+
+.WhyWeArticle__plan__trip {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    margin: -813px 20px 54px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 787px;
+
+    @include md-d {
+        left: 97px;
+        width: 92%;
+    }
+
+    @include sm-d {
+        left: -12%;
+    }
+}
+
+.WhyWeArticle__img {
+    margin-top: -82px;
+
+    @include lg-d {
+        margin-right: -46px;
+    }
+}
+
+.WhyWeArticle__plan__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 42px;
+
+    @include lg-d {
+        align-items: baseline;
+    }
+}
+
+.third__ttl {
+    width: 352px;
+    margin-bottom: 55px;
+
+    @include xl-d {
+        width: 100%;
+        margin: 0px 0px 16px;
+        text-align: start;
+    }
+
+    @include lg-d {
+        width: 87%;
+        margin-bottom: 16px;
+        margin-top: 30px;
+        font-size: 26px;
+        text-align: start;
+    }
+
+    @include sm-d {
+        width: 107%;
+    }
+}

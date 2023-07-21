@@ -1,0 +1,11 @@
+@mixin Forum ($size) {
+    font-family: 'Forum';
+    font-size: $size;
+    font-weight: 400;
+}
+
+@mixin Manrope ($size, $weight) {
+    font-family: "Manrope";
+    font-size: $size;
+    font-weight: $weight;
+}

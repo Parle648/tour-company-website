@@ -1,12 +1,12 @@
-import TourCart from '../../../../Components/TourCart/TourCart';
+import TourCart from '../../../../components/TourCart/TourCart.jsx';
 import React from 'react';
-import styles from './SliderItemList.module.css'
+import './SliderItemList.scss'
 
 const SliderItemList = ({ margin, items, country }) => {
     let indexRef = 0
 
     return (
-        <div className={styles.sliderContainer}>
+        <div className='sliderContainer'>
             <div className="slider-line" style={{marginLeft: `${margin}px`}}>
             {items.map(item => {
                 if (country === 'World') {

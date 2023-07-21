@@ -1,0 +1,27 @@
+@import '../../../Scss/__global.scss/global.scss';
+
+.SliderBtn {
+    width: 75px;
+    height: 75px;
+    background: #79655E;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 111px;
+    bottom: 200px;
+    z-index: 5;
+    @include md-d {
+        right: 7%;
+        bottom: 182px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #6b5d57;
+    }
+}
+
+.SliderBtnArrow {
+    transform: rotate(45deg);
+}

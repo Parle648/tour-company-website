@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import SliderNavigation from "./components/SliderNavigation/SliderNavigation";
 import SliderItemList from "./components/SliderItemList/SliderItemList";
-import SliderBtn from "../../UI/SliderBtn/SliderBtn";
+import SliderBtn from '../../components/UI/SliderBtn/SliderBtn.jsx'
 import SliderBar from "./components/SliderBar/SliderBar";
-import rhombus from '../../img/backgroundttl.svg'
-import getToursList from './api/fetchDataList.js'
+import rhombus from '../../img/backgroundttl.svg';
+import getToursList from './api/fetchDataList.js';
+import navStyles from './components/SliderNavigation/slider-navigation.module.scss';
+import styles from './fetch-slider.module.scss';
 
 function FetchSlider () {
     // get list of tours
@@ -38,15 +40,15 @@ function FetchSlider () {
     const chooseCountryMarker = React.useCallback((event) => {
         event.preventDefault();
         setCountry(event.target.innerText)
-        document.querySelectorAll('.active-link-icon').forEach(item => {
-            item.classList.remove('active-link')
+        document.querySelectorAll(`.${navStyles.activeLinkIcon}`).forEach(item => {
+            item.classList.remove(`${navStyles.activeLink}`)
         })
-        event.target.parentNode.firstElementChild.classList.add('active-link')
+        event.target.parentNode.firstElementChild.classList.add(`${navStyles.activeLink}`)
     }, [])
 
     return (
-        <div className="FetchSlider">
-            <h2 className="FetchSlider__ttl" style={{background: `url(${rhombus})`,
+        <div className={styles.FetchSlider}>
+            <h2 className={styles.FetchSliderTtl} style={{background: `url(${rhombus})`,
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'inherit',
@@ -54,10 +56,12 @@ function FetchSlider () {
             <SliderNavigation chooseCountry={chooseCountryMarker}/>
             <SliderItemList margin={margin} items={items} country={country}/>
             {!disabled &&
-                <SliderBtn handleClick={handleClick} style='FetchSliderBtn'/>
+                <SliderBtn handleClick={handleClick}/>
             }
             {disabled &&
-                <div className="loader"></div>
+                <div className="loader-container">
+                    <div className="loader"></div>
+                </div>
             }
             {document.body.clientWidth < 700 &&
                 <SliderBar items={items} indexSliderBarRef={indexSliderBarRef}/>

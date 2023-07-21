@@ -1,0 +1,23 @@
+@import '../../Scss/__mixins/mixins.scss';
+@import '../../Scss/__global.scss/global.scss';
+
+.navigation {
+    margin-left: 39px;
+    @include xl-d {
+        display: none
+    }
+}
+
+.navList {
+    width: 754px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLink {
+    text-transform: uppercase;
+    @include Forum(16px);
+    color: #000;
+    letter-spacing: 0.64px;
+}

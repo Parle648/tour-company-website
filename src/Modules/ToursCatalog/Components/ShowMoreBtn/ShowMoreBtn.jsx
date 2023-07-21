@@ -1,5 +1,5 @@
 import React from 'react';
-import './ShowMoreBtn.css'
+import './ShowMoreBtn.scss'
 import border from '../../../../img/whitebtnborder.png'
 import topCrown from '../../../../img/substracttop.svg'
 import bottomCrown from '../../../../img/substractbottom.svg'

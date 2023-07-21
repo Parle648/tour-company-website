@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './BookPageItem.css';
+import './BookPageItem.scss';
 import BookCart from '../BookCart/BookCart';
-import BlackBtn from '../../UI/BlackBtn/BlackBtn';
+import BlackBtn from '../UI/BlackBtn/BlackBtn';
 
 const BookPageItem = ({backgroundUrl, title}) => {
     return (

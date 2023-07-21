@@ -1,6 +1,20 @@
 import React from 'react';
-import WhiteBtn from '../../UI/WhiteBtn/WhiteBtn';
-import './SubscribeModule.style.css';
+import styles from './SubscribeModule.module.scss';
+import substractTop from '../../img/substracttop.svg';
+import substractBottom from '../../img/substractbottom.svg';
+import substract from '../../img/Subtract.svg';
+import border from '../../img/subscribeborder.png';
+
+const SendBtn = () => {
+    return (
+        <btn className={styles.WhiteBtn}>
+            Subscribe
+            <img className={styles.top} src={substractTop} alt="top" />
+            <img className={styles.center} src={substract} alt="center" />
+            <img className={styles.bottom} src={substractBottom} alt="bottom" />
+        </btn>
+    );
+}
 
 const SubscribeModule = ({style}) => {
     const [inputValue, setInputValue] = React.useState('Email adress');
@@ -10,12 +24,13 @@ const SubscribeModule = ({style}) => {
     };
 
     return (
-        <div className={`SubscribeModule ${style}`}>
-            <h2 className='SubscribeModule__ttl'>Get weekly inspiration and expert advice</h2>
-            <h2 className='SubscribeModule__subttl'>Sign up for our Weekly Newsletter</h2>
-            <label className='SubscribeModule__label'>
-                <input className='SubscribeModule__input' type="text" name='mail' value={inputValue} onChange={changeValue}/>
-                <WhiteBtn className='SubscribeModule__btn'/> 
+        <div className={styles.SubscribeModule}>
+            <img className={styles.border} src={border} alt="" />
+            <h2 className={styles.SubscribeModule__ttl}>Get weekly inspiration and expert advice</h2>
+            <h2 className={styles.SubscribeModule__subttl}>Sign up for our Weekly Newsletter</h2>
+            <label className={styles.SubscribeModule__label}>
+                <input className={styles.SubscribeModule__input} type="text" name='mail' value={inputValue} onChange={changeValue}/>
+                <SendBtn /> 
             </label>
         </div>
     );

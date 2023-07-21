@@ -1,0 +1,13 @@
+h2 {
+    @include Forum(60px);
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    @include md-d {
+        font-size: 40px;
+    }
+}
+
+a {
+    color: #000;
+}

@@ -1,0 +1,78 @@
+@import '../../Scss/__mixins/mixins.scss';
+@import '../../Scss/__global.scss/global.scss';
+@import '../../Scss/__variables/vars.scss';
+
+.SearchComponent {
+    width: 1110px;
+    margin: 0 auto 61px;
+    padding: 22px 26px 19px 38px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    @include xl-d {
+        width: 95%;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
+
+.Search__ttl-block {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -62%);
+    @include lg-d {
+        width: 310px;
+    }
+}
+
+.SearchLabel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -56%);
+}
+  
+.findBlockTtl {
+    color: #79655E;
+    @include Manrope(18px, 300);
+    line-height: normal;
+    color: $browser;
+    margin-top: -3px;
+}
+
+.findBlockSubttl {
+    @include Manrope (18px, 500);
+    font-style: normal;
+    line-height: normal;
+}
+
+.Search__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    @include lg-d {
+        margin-bottom: 32px;
+    }
+}
+
+.SearchTextBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+}
+
+.SearchBtn {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-radius: 4.5em;
+    padding: 23px 24px;
+}

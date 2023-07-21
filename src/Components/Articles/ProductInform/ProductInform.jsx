@@ -1,8 +1,8 @@
 import React from 'react';
-import './ProductInform.css'
+import './Productinfrom.scss';
 import includeMark from '../../../img/includevector.svg'
 import notIncludeMark from '../../../img/notincludemark.svg'
-import WhiteBtn from '../../../UI/WhiteBtn/WhiteBtn';
+import WhiteBtn from '../../UI/WhiteBtn/WhiteBtn';
 import { Link } from 'react-router-dom'
 
 const ProductInform = ({ objectData }) => {

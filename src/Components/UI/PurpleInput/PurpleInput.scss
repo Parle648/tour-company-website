@@ -1,0 +1,33 @@
+@import '../../../Scss/__global.scss/global.scss';
+@import '../../../Scss/__mixins/mixins.scss';
+
+.PurpleInputLabel {
+    display: block;
+    margin: 8px auto 13px;
+    @include Manrope(16px, 400);
+    @include md-d {
+        margin: 0px 0px 13px;
+    }
+}
+.PurpleInput__title {
+    margin-left: 22px;
+    color: #79655E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.PurpleInput {
+    width: 445px;
+    height: 55px;
+    border: 1.5px solid #E2D3CE;
+    border-radius: 74px;
+    background-color: #fff;
+    outline: none;
+    padding: 0px 15px;
+    color: #79655E;
+    font-size: 20px;
+    margin-bottom: 15px;
+    @include md-d {
+        width: 210px;
+    }
+}

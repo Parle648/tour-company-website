@@ -1,7 +1,7 @@
 import React from 'react';
 import activeStar from '../../img/staractive.svg'
 import nonActiveStar from '../../img/starnonactive.svg'
-import './TourRatingComponent.css'
+import './TourRatingComponent.scss';
 
 const TourRatingComponent = ({rating}) => {
     const starsArray = []

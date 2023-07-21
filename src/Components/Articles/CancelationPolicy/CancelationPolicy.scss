@@ -1,0 +1,65 @@
+@import '../../../Scss/__global.scss/global.scss';
+@import '../../../Scss/__mixins/mixins.scss';
+
+.CancelationPolicy {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 66px 285px 105px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @include lg-d {
+        width: 92%;
+        height: auto;
+        padding: 26px 33px;
+    }
+}
+
+.CancelationPolicy__ttl,
+.CancelationPolicy__topic-ttl {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 66px;
+
+    @include md-d {
+        width: 100%;
+    }
+}
+
+.CancelationPolicy__topic-ttl,
+.CancelationPolicy__topic-subttl {
+    width: 539px;
+    margin-bottom: 20px;
+    text-align: left;
+    @include md-d {
+        width: 92%;
+    }
+}
+
+.CancelationPolicy__ttl {
+    @include md-d {
+        font-size: 40px;
+        text-align: start;
+        margin-bottom: 48px;
+    }
+}
+
+.CancelationPolicy__topic-ttl {
+    @include Forum(40px);
+
+    @include md-d {
+        font-size: 30px;
+    }
+}
+
+.CancelationPolicy__topic-subttl {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    @include Manrope(16px, 400);
+}
